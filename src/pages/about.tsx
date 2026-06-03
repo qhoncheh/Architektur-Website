@@ -37,7 +37,6 @@ const About = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          {/* متن */}
           <Col xs={24} sm={24} md={24} lg={12}>
             <div
               style={{
@@ -83,7 +82,6 @@ const About = () => {
             </div>
           </Col>
 
-          {/* عکس */}
           <Col xs={24} sm={24} md={24} lg={12}>
             <div
               style={{
