@@ -13,7 +13,38 @@
 
 
 
+.ant-menu-dark,
+.ant-menu-dark > .ant-menu {
+  background: transparent !important;
+}
 
+.ant-menu-dark .ant-menu-item {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  margin: 12px 0 !important;
+  color: #d1d5db !important;
+}
+
+.ant-menu-dark .ant-menu-item:hover {
+  color: #9ca3af !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background: #6b7280 !important;
+  color: #fff !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected a {
+  color: #fff !important;
+}
+
+.ant-menu-item a {
+  width: 100%;
+  text-align: center;
+}
 
 
 

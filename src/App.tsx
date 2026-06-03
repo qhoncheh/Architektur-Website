@@ -4,13 +4,15 @@ import Sidebar from "./components/sidebar/sidebar";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Project from "./pages/project";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   return (
-    <div className="min-h-screen flex bg-gray-800 ">
+    <div className="min-h-screen flex bg-gray-800  ">
       <div className="flex w-full">
         <Sidebar />
-        <div className="flex w-[70%] ml-[max(5vw,25px)] my-8 text-black text-base">
+        <div className="flex justify-center align-center  w-[80%]  text-gray-300 text-base">
           <Routes>
             <Route path='/' element={<Project />} />
             <Route path='/about' element={<About />} />

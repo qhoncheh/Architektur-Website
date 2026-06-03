@@ -12,6 +12,8 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.0",
     "@tailwindcss/vite": "^4.3.0",
+    "antd": "^6.4.3",
+    "aos": "^2.3.4",
     "postcss": "^8.5.15",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
