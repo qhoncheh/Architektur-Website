@@ -50,7 +50,7 @@ const Sidebar = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        padding: "82px 20px",
+        padding: "72px 20px",
         background: "#111827",
         position: "relative",
       }}
