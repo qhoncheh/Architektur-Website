@@ -7,7 +7,7 @@ const { Content } = Layout;
 const { Title, Text } = Typography;
 
 const About = () => {
-  const photoUrl = '/222.JPG';
+  const photoUrl = '/112.png';
 
   useEffect(() => {
     AOS.init({
@@ -48,7 +48,7 @@ const About = () => {
               }}
             >
               <Title
-                level={1}
+                level={3}
                 style={{
                   marginBottom: '16px',
                   fontWeight: 'bold',
@@ -56,7 +56,7 @@ const About = () => {
                   color: '#FFFFFF',
                 }}
               >
-                درباره ما
+                About Us 
               </Title>
 
               <Text

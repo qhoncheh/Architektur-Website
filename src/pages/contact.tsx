@@ -1,58 +1,185 @@
-import { FaPhoneAlt, FaLinkedin, FaEnvelope, FaTelegramPlane } from "react-icons/fa";
+import { useEffect } from "react";
+import { Layout, Row, Col, Typography } from "antd";
+import {
+  PhoneOutlined,
+  MailOutlined,
+  LinkedinOutlined,
+} from "@ant-design/icons";
+import { FaTelegramPlane } from "react-icons/fa";
 import { IoPhonePortrait } from "react-icons/io5";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const { Content } = Layout;
+const { Title, Text, Link } = Typography;
 
 const Contact = () => {
+  const photoUrl = "/113.png";
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-out-cubic",
+      once: true,
+    });
+  }, []);
+
   return (
-    <div className="p-6 space-y-5 text-lg">
-      {/* تلفن ثابت */}
-      <a
-        href="tel:09116771794"
-        className="flex items-center gap-3 hover:text-blue-600 transition-colors"
+    <Layout
+      style={{
+        minHeight: "100vh",
+        backgroundColor: "#1F2937",
+      }}
+    >
+      <Content
+        style={{
+          padding: "50px",
+          paddingTop: "100px",
+        }}
       >
-        <FaPhoneAlt className="text-blue-600" />
-        <span>09116771794</span>
-      </a>
+        <Row
+          gutter={[24, 24]}
+          align="middle"
+          data-aos="fade-up"
+        >
+          {/* اطلاعات تماس */}
+          <Col xs={24} sm={24} md={24} lg={12}>
+            <div
+              style={{
+                textAlign: "right",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                height: "100%",
+                gap: "24px",
+              }}
+            >
+              <Title
+                level={3}
+                style={{
+                  marginBottom: "16px",
+                  fontWeight: "bold",
+                  fontSize: "2.5rem",
+                  color: "#FFFFFF",
+                }}
+              >
+                Contact Me
+              </Title>
 
-      {/* تلفن همراه */}
-      <a
-        href="tel:09356944705"
-        className="flex items-center gap-3 hover:text-green-600 transition-colors"
-      >
-        <IoPhonePortrait className="text-green-600" />
-        <span>09356944705</span>
-      </a>
+              <Link href="tel:09116771794">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    color: "#9CA3AF",
+                    fontSize: "18px",
+                  }}
+                >
+                  <PhoneOutlined />
+                  <Text style={{ color: "#9CA3AF" }}>
+                    09116771794
+                  </Text>
+                </div>
+              </Link>
 
-      {/* ایمیل */}
-      <a
-        href="mailto:ghazalehataeim@gmail.com"
-        className="flex items-center gap-3 hover:text-red-500 transition-colors"
-      >
-        <FaEnvelope className="text-red-500" />
-        <span>ghazalehataeim@gmail.com</span>
-      </a>
+              <Link href="tel:09356944705">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    color: "#9CA3AF",
+                    fontSize: "18px",
+                  }}
+                >
+                  <IoPhonePortrait />
+                  <Text style={{ color: "#9CA3AF" }}>
+                    09356944705
+                  </Text>
+                </div>
+              </Link>
 
-      {/* لینکدین */}
-      <a
-        href="https://linkedin.com/in/arashkhatir"
-        target="_blank"
-        rel="noreferrer"
-        className="flex items-center gap-3 hover:text-blue-700 transition-colors"
-      >
-        <FaLinkedin className="text-blue-700" />
-        <span>ghazalehataei</span>
-      </a>
+              <Link href="mailto:ghazalehataeim@gmail.com">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                  }}
+                >
+                  <MailOutlined />
+                  <Text style={{ color: "#9CA3AF" }}>
+                    ghazalehataeim@gmail.com
+                  </Text>
+                </div>
+              </Link>
 
-      {/* تلگرام */}
-      <a
-        href="https://t.me/ghazalehataei"
-        target="_blank"
-        rel="noreferrer"
-        className="flex items-center gap-3 hover:text-sky-500 transition-colors"
-      >
-        <FaTelegramPlane className="text-sky-500" />
-        <span>@ghazalehataei</span>
-      </a>
-    </div>
+              <Link
+                href="https://linkedin.com/in/arashkhatir"
+                target="_blank"
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                  }}
+                >
+                  <LinkedinOutlined />
+                  <Text style={{ color: "#9CA3AF" }}>
+                    ghazalehataei
+                  </Text>
+                </div>
+              </Link>
+
+              <Link
+                href="https://t.me/ghazalehataei"
+                target="_blank"
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                  }}
+                >
+                  <FaTelegramPlane />
+                  <Text style={{ color: "#9CA3AF" }}>
+                    @ghazalehataei
+                  </Text>
+                </div>
+              </Link>
+            </div>
+          </Col>
+
+          {/* عکس */}
+          <Col xs={24} sm={24} md={24} lg={12}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100%",
+              }}
+            >
+              <img
+                src={photoUrl}
+                alt="Contact"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                style={{
+                  width: "60%",
+                  height: "400px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+            </div>
+          </Col>
+        </Row>
+      </Content>
+    </Layout>
   );
 };
 
