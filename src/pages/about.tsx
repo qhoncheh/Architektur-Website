@@ -51,8 +51,8 @@ const About = () => {
                 level={3}
                 style={{
                   marginBottom: '16px',
-                  fontWeight: 'bold',
-                  fontSize: '2.5rem',
+                  // fontWeight: 'bold',
+                  fontSize: '2rem',
                   color: '#FFFFFF',
                 }}
               >

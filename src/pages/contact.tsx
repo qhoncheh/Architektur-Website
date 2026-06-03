@@ -50,15 +50,16 @@ const Contact = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 height: "100%",
-                gap: "24px",
+                gap: "30px",
               }}
             >
               <Title
                 level={3}
                 style={{
-                  marginBottom: "16px",
-                  fontWeight: "bold",
-                  fontSize: "2.5rem",
+                  marginBottom: "60px",
+                  // fontWeight: "",
+                  textAlign: "center",
+                  fontSize: "2rem",
                   color: "#FFFFFF",
                 }}
               >
@@ -70,6 +71,7 @@ const Contact = () => {
                   style={{
                     display: "flex",
                     alignItems: "center",
+                    
                     gap: "12px",
                     color: "#9CA3AF",
                     fontSize: "18px",
