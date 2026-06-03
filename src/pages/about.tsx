@@ -40,7 +40,7 @@ const About = () => {
           <Col xs={24} sm={24} md={24} lg={12}>
             <div
               style={{
-                textAlign: 'right',
+                textAlign: 'center',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
@@ -98,7 +98,7 @@ const About = () => {
                 data-aos-delay="300"
                 data-aos-duration="1000"
                 style={{
-                  width: '60%',
+                  width: '80%',
                   height: '400px',
                   objectFit: 'cover',
                   borderRadius: '8px',

@@ -4,7 +4,6 @@ import Sidebar from "./components/sidebar/sidebar";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Project from "./pages/project";
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {

@@ -37,27 +37,22 @@ const Contact = () => {
           paddingTop: "100px",
         }}
       >
-        <Row
-          gutter={[24, 24]}
-          align="middle"
-          data-aos="fade-up"
-        >
+        <Row gutter={[24, 24]} align="middle" data-aos="fade-up">
           <Col xs={24} sm={24} md={24} lg={12}>
             <div
               style={{
-                textAlign: "right",
+                textAlign: "center",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
                 height: "100%",
-                gap: "30px",
+                gap: "20px",
               }}
             >
               <Title
                 level={3}
                 style={{
-                  marginBottom: "60px",
-                  // fontWeight: "",
+                  marginBottom: "30px",
                   textAlign: "center",
                   fontSize: "2rem",
                   color: "#FFFFFF",
@@ -71,16 +66,14 @@ const Contact = () => {
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    
+                    justifyContent: "center",
                     gap: "12px",
                     color: "#9CA3AF",
                     fontSize: "18px",
                   }}
                 >
                   <PhoneOutlined />
-                  <Text style={{ color: "#9CA3AF" }}>
-                    09116771794
-                  </Text>
+                  <Text style={{ color: "#9CA3AF" }}>09116771794</Text>
                 </div>
               </Link>
 
@@ -90,64 +83,58 @@ const Contact = () => {
                     display: "flex",
                     alignItems: "center",
                     gap: "12px",
+                    justifyContent: "center",
                     color: "#9CA3AF",
                     fontSize: "18px",
                   }}
                 >
                   <IoPhonePortrait />
-                  <Text style={{ color: "#9CA3AF" }}>
-                    09356944705
-                  </Text>
+                  <Text style={{ color: "#9CA3AF" }}>09356944705</Text>
                 </div>
               </Link>
 
-              <Link href="mailto:ghazalehataeim@gmail.com">
+        
+
+              <Link href="https://linkedin.com/in/arashkhatir" target="_blank">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "12px",
+                  }}
+                >
+                  <LinkedinOutlined />
+                  <Text style={{ color: "#9CA3AF" }}>ghazalehataei</Text>
+                </div>
+              </Link>
+
+              <Link href="https://t.me/ghazalehataei" target="_blank">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "12px",
+                  }}
+                >
+                  <FaTelegramPlane />
+                  <Text style={{ color: "#9CA3AF" }}>@ghazalehataei</Text>
+                </div>
+              </Link>
+
+                    <Link href="mailto:ghazalehataeim@gmail.com">
                 <div
                   style={{
                     display: "flex",
                     alignItems: "center",
                     gap: "12px",
+                    justifyContent: "center",
                   }}
                 >
                   <MailOutlined />
                   <Text style={{ color: "#9CA3AF" }}>
                     ghazalehataeim@gmail.com
-                  </Text>
-                </div>
-              </Link>
-
-              <Link
-                href="https://linkedin.com/in/arashkhatir"
-                target="_blank"
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "12px",
-                  }}
-                >
-                  <LinkedinOutlined />
-                  <Text style={{ color: "#9CA3AF" }}>
-                    ghazalehataei
-                  </Text>
-                </div>
-              </Link>
-
-              <Link
-                href="https://t.me/ghazalehataei"
-                target="_blank"
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "12px",
-                  }}
-                >
-                  <FaTelegramPlane />
-                  <Text style={{ color: "#9CA3AF" }}>
-                    @ghazalehataei
                   </Text>
                 </div>
               </Link>
@@ -169,7 +156,7 @@ const Contact = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
                 style={{
-                  width: "60%",
+                  width: "90%",
                   height: "400px",
                   objectFit: "cover",
                   borderRadius: "8px",
