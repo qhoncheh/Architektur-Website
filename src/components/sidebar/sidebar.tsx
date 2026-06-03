@@ -42,100 +42,100 @@ const Sidebar = () => {
     },
   ];
 
-  const sidebarContent = (
+ const sidebarContent = (
+  <div
+    style={{
+      height: "100%",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+      padding: "32px 20px",
+      background: "#111827",
+      position: "relative",
+    }}
+  >
+    <div>
+      <Menu
+        theme="dark"
+        mode="inline"
+        selectedKeys={[location.pathname]}
+        items={menuItems}
+        style={{
+          border: "none",
+          background: "transparent",
+          textAlign: "center",
+        }}
+      />
+    </div>
+
     <div
       style={{
-        height: "100%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
-        padding: "72px 20px",
-        background: "#111827",
-        position: "relative",
+        gap: "20px",
       }}
     >
-      <div>
-        {/* <h2
-          style={{
-            textAlign: "center",
-            color: "#d1d5db",
-            marginBottom: "80px",
-            fontSize: "28px",
-            fontWeight: "bold",
-          }}
-        >
-          Ghazaleh Ataei
-        </h2> */}
-
-        <Menu
-          theme="dark"
-          mode="inline"
-          selectedKeys={[location.pathname]}
-          items={menuItems}
-          style={{
-            border: "none",
-            background: "transparent",
-            textAlign: "center",
-          }}
-        />
-      </div>
+      <Button
+        icon={<DownloadOutlined />}
+        size="large"
+        block
+        style={{
+          borderRadius: "999px",
+          background: "#232d42",
+          borderColor: "#232d42",
+          color: "#fff",
+          fontWeight: 600,
+          height: "50px",
+        }}
+      >
+        Download CV
+      </Button>
 
       <div
         style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "25px",
+          color: "#9ca3af",
+          fontSize: "13px",
+          textAlign: "center",
+          lineHeight: "1.8",
         }}
       >
-        <Button
-          icon={<DownloadOutlined />}
-          size="large"
-          block
+        <div>Designed & Developed by Ghoncheh Ataei</div>
+        <div>© 2026 All Rights Reserved.</div>
+      </div>
+
+      <Dropdown
+        menu={{ items: languageItems }}
+        trigger={["hover"]}
+      >
+        <div
           style={{
-            borderRadius: "999px",
-            background: "#232d42",
-            borderColor: "#232d42",
-            color: "#fff",
-            fontWeight: 600,
-            height: "50px",
+            position: "absolute",
+            bottom: "230px",
+            left: "2px",
+            cursor: "pointer",
+            zIndex: 10,
+            width: "48px",
+            height: "48px",
+            border: "1px solid #232d42",
+            borderRadius: "12px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            background: "transparent",
+            transition: "all 0.3s ease",
           }}
         >
-          Download CV
-        </Button>
-<Dropdown
-  menu={{ items: languageItems }}
-  trigger={["hover"]}
-
->
-  <div
-  style={{
-    position: "absolute",
-    bottom: "230px",
-    left: "2px",
-    cursor: "pointer",
-    zIndex: 10,
-    width: "48px",
-    height: "48px",
-    border: "1px solid #232d42",
-    borderRadius: "12px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    background: "transparent",
-    transition: "all 0.3s ease",
-  }}
->
-  <GlobalOutlined
-    style={{
-      fontSize: "22px",
-      color: "#d1d5db",
-    }}
-  />
-</div>
-</Dropdown>
-      </div>
+          <GlobalOutlined
+            style={{
+              fontSize: "22px",
+              color: "#d1d5db",
+            }}
+          />
+        </div>
+      </Dropdown>
     </div>
-  );
+  </div>
+);
 
   if (!screens.md) {
     return (
