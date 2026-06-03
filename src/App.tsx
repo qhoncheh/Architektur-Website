@@ -12,7 +12,7 @@ function App() {
     <div className="min-h-screen flex bg-gray-800  ">
       <div className="flex w-full">
         <Sidebar />
-        <div className="flex justify-center align-center  w-[80%]  text-gray-300 text-base">
+        <div className="flex justify-center align-center w-full text-gray-300 text-base">
           <Routes>
             <Route path='/' element={<Project />} />
             <Route path='/about' element={<About />} />

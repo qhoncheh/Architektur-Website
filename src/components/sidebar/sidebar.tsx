@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Layout, Menu, Button, Drawer, Grid, Dropdown } from "antd";
 import {
   DownloadOutlined,
@@ -94,7 +94,7 @@ const Sidebar = () => {
           block
           style={{
             borderRadius: "999px",
-            background: "#6b7280",
+            background: "#6b7285",
             borderColor: "#6b7280",
             color: "#fff",
             fontWeight: 600,
@@ -106,12 +106,12 @@ const Sidebar = () => {
 <Dropdown
   menu={{ items: languageItems }}
   trigger={["hover"]}
-  placement="rightTop"
+
 >
   <div
   style={{
     position: "absolute",
-    bottom: "155px",
+    bottom: "230px",
     left: "2px",
     cursor: "pointer",
     zIndex: 10,
@@ -155,19 +155,21 @@ const Sidebar = () => {
           }}
         />
 
-        <Drawer
-          placement="left"
-          open={open}
-          onClose={() => setOpen(false)}
-          width={280}
-          styles={{
-            body: {
-              padding: 0,
-            },
-          }}
-        >
-          {sidebarContent}
-        </Drawer>
+       <Drawer
+  placement="left"
+  open={open}
+  onClose={() => setOpen(false)}
+  width={280}
+  closable={false}
+  styles={{
+    body: {
+      padding: 0,
+      background: "#111827",
+    },
+  }}
+>
+  {sidebarContent}
+</Drawer>
       </>
     );
   }
