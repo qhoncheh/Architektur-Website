@@ -42,7 +42,6 @@ const Contact = () => {
           align="middle"
           data-aos="fade-up"
         >
-          {/* اطلاعات تماس */}
           <Col xs={24} sm={24} md={24} lg={12}>
             <div
               style={{
@@ -153,7 +152,6 @@ const Contact = () => {
             </div>
           </Col>
 
-          {/* عکس */}
           <Col xs={24} sm={24} md={24} lg={12}>
             <div
               style={{
