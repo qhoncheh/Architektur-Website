@@ -9,7 +9,6 @@ import { NavLink, useLocation } from "react-router";
 
 const { Sider } = Layout;
 const { useBreakpoint } = Grid;
-
 const Sidebar = () => {
   const screens = useBreakpoint();
   const [open, setOpen] = useState(false);
@@ -94,8 +93,8 @@ const Sidebar = () => {
           block
           style={{
             borderRadius: "999px",
-            background: "#6b7285",
-            borderColor: "#6b7280",
+            background: "#232d42",
+            borderColor: "#232d42",
             color: "#fff",
             fontWeight: 600,
             height: "50px",
@@ -117,7 +116,7 @@ const Sidebar = () => {
     zIndex: 10,
     width: "48px",
     height: "48px",
-    border: "1px solid #6b7280",
+    border: "1px solid #232d42",
     borderRadius: "12px",
     display: "flex",
     alignItems: "center",
