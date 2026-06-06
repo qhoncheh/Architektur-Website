@@ -5,9 +5,8 @@ import 'aos/dist/aos.css';
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
-
 const About = () => {
-  const photoUrl = '/112.png';
+const photoUrl = '/112.png';
 
   useEffect(() => {
     AOS.init({
