@@ -12,7 +12,6 @@ import "aos/dist/aos.css";
 
 const { Content } = Layout;
 const { Title, Text, Link } = Typography;
-
 const Contact = () => {
   const photoUrl = "/113.png";
 

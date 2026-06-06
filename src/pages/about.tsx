@@ -50,7 +50,6 @@ const photoUrl = '/112.png';
                 level={3}
                 style={{
                   marginBottom: '16px',
-                  // fontWeight: 'bold',
                   fontSize: '2rem',
                   color: '#FFFFFF',
                 }}
