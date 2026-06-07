@@ -7,19 +7,18 @@ import LanguageToggle from "../language/language";
 const SidebarContent = () => {
   const location = useLocation();
   const { t } = useTranslation();
-
   const menuItems = [
     {
       key: "/",
-      label: <NavLink to="/">{t("projects")}</NavLink>,
+      label: <NavLink to="/" style={{ fontWeight : "300"}}>{t("projects")}</NavLink>
     },
     {
       key: "/about",
-      label: <NavLink to="/about">{t("about")}</NavLink>,
+      label: <NavLink to="/about" style={{ fontWeight : "300"}}>{t("about")}</NavLink>,
     },
     {
       key: "/contact",
-      label: <NavLink to="/contact">{t("contact")}</NavLink>,
+      label: <NavLink to="/contact" style={{ fontWeight : "300"}}>{t("contact")}</NavLink>,
     },
   ];
 
