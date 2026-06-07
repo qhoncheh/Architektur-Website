@@ -115,11 +115,11 @@ const Contact = () => {
                   <LinkedinOutlined
                     style={{ color: "#9CA3AF", fontSize: "18px" }}
                   />
-                  <Text style={textStyle}>ghazalehataei</Text>
+                  <Text style={textStyle}>ghazaleh_ataei</Text>
                 </div>
               </Link>
 
-              <Link href="https://t.me/ghazalehataei" target="_blank">
+              <Link href="https://t.me/ghazaleh_ataei" target="_blank">
                 <div
                   style={{
                     display: "flex",
@@ -131,11 +131,11 @@ const Contact = () => {
                   <FaTelegramPlane
                     style={{ color: "#9CA3AF", fontSize: "18px" }}
                   />
-                  <Text style={textStyle}>@ghazalehataei</Text>
+                  <Text style={textStyle}>@ghazaleh_ataei</Text>
                 </div>
               </Link>
 
-              <Link href="mailto:ghazalehataeim@gmail.com">
+              <Link href="mailto:ghazalehataei.architect@gmail.com">
                 <div
                   style={{
                     display: "flex",
@@ -148,7 +148,7 @@ const Contact = () => {
                     style={{ color: "#9CA3AF", fontSize: "18px" }}
                   />
                   <Text style={textStyle}>
-                    ghazalehataeim@gmail.com
+                    ghazalehataei.architect@gmail.com
                   </Text>
                 </div>
               </Link>
