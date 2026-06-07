@@ -30,15 +30,15 @@ const Sidebar = () => {
   const menuItems = [
     {
       key: "/",
-      label: <NavLink to="/">Projects</NavLink>,
+      label: <NavLink to="/"  style={{ fontWeight: 300 }}>Projects</NavLink>,
     },
     {
       key: "/about",
-      label: <NavLink to="/about">About</NavLink>,
+      label: <NavLink to="/about"  style={{ fontWeight: 300 }}>About</NavLink>,
     },
     {
       key: "/contact",
-      label: <NavLink to="/contact">Contact</NavLink>,
+      label: <NavLink to="/contact"  style={{ fontWeight: 300 }}>Contact</NavLink>,
     },
   ];
 
@@ -86,7 +86,7 @@ const Sidebar = () => {
           background: "#232d42",
           borderColor: "#232d42",
           color: "#fff",
-          fontWeight: 600,
+          fontWeight: 300,
           height: "50px",
         }}
       >
