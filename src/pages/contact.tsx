@@ -59,7 +59,7 @@ const Contact = () => {
                 style={{
                   marginBottom: "30px",
                   textAlign: "center",
-                  fontSize: "2rem",
+                  fontSize: "1.5rem",
                   color: "#FFFFFF",
                   fontWeight: 300,
                 }}

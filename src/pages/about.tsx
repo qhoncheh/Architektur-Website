@@ -7,7 +7,11 @@ const { Content } = Layout;
 const { Title, Text } = Typography;
 const About = () => {
 const photoUrl = '/112.png';
-
+const textStyle = {
+    color: "#9CA3AF",
+    fontSize: "18px",
+    fontWeight: 400,
+  };
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -50,8 +54,9 @@ const photoUrl = '/112.png';
                 level={3}
                 style={{
                   marginBottom: '16px',
-                  fontSize: '2rem',
+                  fontSize: '1.5rem',
                   color: '#FFFFFF',
+                  fontWeight: 300,
                 }}
               >
                 About Us 
