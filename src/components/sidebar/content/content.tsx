@@ -1,5 +1,5 @@
 import { Menu, Button } from "antd";
-import { DownloadOutlined } from "@ant-design/icons";
+// import { DownloadOutlined } from "@ant-design/icons";
 import { NavLink, useLocation } from "react-router";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "../language/language";
@@ -50,7 +50,7 @@ const SidebarContent = () => {
 
       <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
         <Button
-          icon={<DownloadOutlined />}
+          // icon={<DownloadOutlined />}
           size="large"
           block
           style={{

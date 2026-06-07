@@ -8,7 +8,6 @@ const { Content } = Layout;
 const { Title, Text } = Typography;
 const About = () => {
 const photoUrl = '/112.png';
-
 const { t } = useTranslation();
 
   useEffect(() => {

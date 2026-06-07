@@ -26,6 +26,7 @@ const LanguageToggle = () => {
         alignItems: "center",
         justifyContent: "center",
         color: "#fff",
+        backgroundColor: "#232d42",
         fontSize: "12px",
         fontWeight: 500,
         userSelect: "none",
