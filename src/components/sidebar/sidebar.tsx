@@ -52,6 +52,8 @@ const Sidebar = () => {
       padding: "32px 20px",
       background: "#111827",
       position: "relative",
+
+      
     }}
   >
     <div>
