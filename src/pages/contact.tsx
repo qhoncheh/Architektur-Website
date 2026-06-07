@@ -23,6 +23,12 @@ const Contact = () => {
     });
   }, []);
 
+  const textStyle = {
+    color: "#9CA3AF",
+    fontSize: "18px",
+    fontWeight: 400,
+  };
+
   return (
     <Layout
       style={{
@@ -55,6 +61,7 @@ const Contact = () => {
                   textAlign: "center",
                   fontSize: "2rem",
                   color: "#FFFFFF",
+                  fontWeight: 300,
                 }}
               >
                 Contact Me
@@ -67,12 +74,10 @@ const Contact = () => {
                     alignItems: "center",
                     justifyContent: "center",
                     gap: "12px",
-                    color: "#9CA3AF",
-                    fontSize: "18px",
                   }}
                 >
-                  <PhoneOutlined />
-                  <Text style={{ color: "#9CA3AF" }}>09116771794</Text>
+                  <PhoneOutlined style={{ color: "#9CA3AF" }} />
+                  <Text style={textStyle}>09116771794</Text>
                 </div>
               </Link>
 
@@ -81,20 +86,21 @@ const Contact = () => {
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    gap: "12px",
                     justifyContent: "center",
-                    color: "#9CA3AF",
-                    fontSize: "18px",
+                    gap: "12px",
                   }}
                 >
-                  <IoPhonePortrait />
-                  <Text style={{ color: "#9CA3AF" }}>09356944705</Text>
+                  <IoPhonePortrait
+                    style={{ color: "#9CA3AF", fontSize: "18px" }}
+                  />
+                  <Text style={textStyle}>09356944705</Text>
                 </div>
               </Link>
 
-        
-
-              <Link href="https://www.linkedin.com/in/ghazaleh-ataei-b54829192/" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/ghazaleh-ataei-b54829192/"
+                target="_blank"
+              >
                 <div
                   style={{
                     display: "flex",
@@ -103,8 +109,10 @@ const Contact = () => {
                     gap: "12px",
                   }}
                 >
-                  <LinkedinOutlined />
-                  <Text style={{ color: "#9CA3AF" }}>ghazalehataei</Text>
+                  <LinkedinOutlined
+                    style={{ color: "#9CA3AF", fontSize: "18px" }}
+                  />
+                  <Text style={textStyle}>ghazalehataei</Text>
                 </div>
               </Link>
 
@@ -117,22 +125,26 @@ const Contact = () => {
                     gap: "12px",
                   }}
                 >
-                  <FaTelegramPlane />
-                  <Text style={{ color: "#9CA3AF" }}>@ghazalehataei</Text>
+                  <FaTelegramPlane
+                    style={{ color: "#9CA3AF", fontSize: "18px" }}
+                  />
+                  <Text style={textStyle}>@ghazalehataei</Text>
                 </div>
               </Link>
 
-                    <Link href="mailto:ghazalehataeim@gmail.com">
+              <Link href="mailto:ghazalehataeim@gmail.com">
                 <div
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    gap: "12px",
                     justifyContent: "center",
+                    gap: "12px",
                   }}
                 >
-                  <MailOutlined />
-                  <Text style={{ color: "#9CA3AF" }}>
+                  <MailOutlined
+                    style={{ color: "#9CA3AF", fontSize: "18px" }}
+                  />
+                  <Text style={textStyle}>
                     ghazalehataeim@gmail.com
                   </Text>
                 </div>
