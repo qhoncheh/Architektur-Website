@@ -6,6 +6,8 @@ import {
   GlobalOutlined,
 } from "@ant-design/icons";
 import { NavLink, useLocation } from "react-router";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 
 const { Sider } = Layout;
 const { useBreakpoint } = Grid;
@@ -13,44 +15,33 @@ const Sidebar = () => {
   const screens = useBreakpoint();
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   const languageItems = [
     {
-      key: "De",
-      label: "Germany",
-      onClick: () => console.log("Persian"),
+      key: "de",
+      label: "Deutsch",
+      onClick: () => i18n.changeLanguage("de"),
     },
     {
       key: "en",
       label: "English",
-      onClick: () => console.log("English"),
+      onClick: () => i18n.changeLanguage("en"),
     },
   ];
 
   const menuItems = [
     {
       key: "/",
-      label: (
-        <NavLink to="/" style={{ fontWeight: 300 }}>
-          Projects
-        </NavLink>
-      ),
+      label: <NavLink to="/">{t("projects")}</NavLink>,
     },
     {
       key: "/about",
-      label: (
-        <NavLink to="/about" style={{ fontWeight: 300 }}>
-          About
-        </NavLink>
-      ),
+      label: <NavLink to="/about">{t("about")}</NavLink>,
     },
     {
       key: "/contact",
-      label: (
-        <NavLink to="/contact" style={{ fontWeight: 300 }}>
-          Contact
-        </NavLink>
-      ),
+      label: <NavLink to="/contact">{t("contact")}</NavLink>,
     },
   ];
 
@@ -101,7 +92,7 @@ const Sidebar = () => {
             height: "50px",
           }}
         >
-          Download CV
+          {t("downloadCV")}
         </Button>
 
         <div
@@ -112,8 +103,8 @@ const Sidebar = () => {
             lineHeight: "1.8",
           }}
         >
-          <div>Designed & Developed by Ghoncheh Ataei</div>
-          <div>© 2026 All Rights Reserved.</div>
+          <div>{t("Design")}</div>
+          <div>{t("footer")}</div>
         </div>
 
         <Dropdown menu={{ items: languageItems }} trigger={["hover"]}>
