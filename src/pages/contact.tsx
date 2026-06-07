@@ -94,7 +94,7 @@ const Contact = () => {
 
         
 
-              <Link href="https://linkedin.com/in/arashkhatir" target="_blank">
+              <Link href="https://www.linkedin.com/in/ghazaleh-ataei-b54829192/" target="_blank">
                 <div
                   style={{
                     display: "flex",
