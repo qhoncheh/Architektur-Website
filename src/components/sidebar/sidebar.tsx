@@ -30,114 +30,122 @@ const Sidebar = () => {
   const menuItems = [
     {
       key: "/",
-      label: <NavLink to="/"  style={{ fontWeight: 300 }}>Projects</NavLink>,
+      label: (
+        <NavLink to="/" style={{ fontWeight: 300 }}>
+          Projects
+        </NavLink>
+      ),
     },
     {
       key: "/about",
-      label: <NavLink to="/about"  style={{ fontWeight: 300 }}>About</NavLink>,
+      label: (
+        <NavLink to="/about" style={{ fontWeight: 300 }}>
+          About
+        </NavLink>
+      ),
     },
     {
       key: "/contact",
-      label: <NavLink to="/contact"  style={{ fontWeight: 300 }}>Contact</NavLink>,
+      label: (
+        <NavLink to="/contact" style={{ fontWeight: 300 }}>
+          Contact
+        </NavLink>
+      ),
     },
   ];
 
- const sidebarContent = (
-  <div
-    style={{
-      height: "100%",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-between",
-      padding: "32px 20px",
-      background: "#111827",
-      position: "relative",
-
-      
-    }}
-  >
-    <div>
-      <Menu
-        theme="dark"
-        mode="inline"
-        selectedKeys={[location.pathname]}
-        items={menuItems}
-        style={{
-          border: "none",
-          background: "transparent",
-          textAlign: "center",
-        }}
-      />
-    </div>
-
+  const sidebarContent = (
     <div
       style={{
+        height: "100%",
         display: "flex",
         flexDirection: "column",
-        gap: "20px",
+        justifyContent: "space-between",
+        padding: "32px 20px",
+        background: "#111827",
+        position: "relative",
       }}
     >
-      <Button
-        icon={<DownloadOutlined />}
-        size="large"
-        block
-        style={{
-          borderRadius: "999px",
-          background: "#232d42",
-          borderColor: "#232d42",
-          color: "#fff",
-          fontWeight: 300,
-          height: "50px",
-        }}
-      >
-        Download CV
-      </Button>
+      <div>
+        <Menu
+          theme="dark"
+          mode="inline"
+          selectedKeys={[location.pathname]}
+          items={menuItems}
+          style={{
+            border: "none",
+            background: "transparent",
+            textAlign: "center",
+          }}
+        />
+      </div>
 
       <div
         style={{
-          color: "#9ca3af",
-          fontSize: "13px",
-          textAlign: "center",
-          lineHeight: "1.8",
+          display: "flex",
+          flexDirection: "column",
+          gap: "20px",
         }}
       >
-        <div>Designed & Developed by Ghoncheh Ataei</div>
-        <div>© 2026 All Rights Reserved.</div>
-      </div>
-
-      <Dropdown
-        menu={{ items: languageItems }}
-        trigger={["hover"]}
-      >
-        <div
+        <Button
+          icon={<DownloadOutlined />}
+          iconPosition="end"
+          size="large"
+          block
           style={{
-            position: "absolute",
-            bottom: "230px",
-            left: "2px",
-            cursor: "pointer",
-            zIndex: 10,
-            width: "48px",
-            height: "48px",
-            border: "1px solid #232d42",
-            borderRadius: "12px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            background: "transparent",
-            transition: "all 0.3s ease",
+            borderRadius: "999px",
+            background: "#232d42",
+            borderColor: "#232d42",
+            color: "#fff",
+            fontWeight: 300,
+            height: "50px",
           }}
         >
-          <GlobalOutlined
-            style={{
-              fontSize: "22px",
-              color: "#d1d5db",
-            }}
-          />
+          Download CV
+        </Button>
+
+        <div
+          style={{
+            color: "#9ca3af",
+            fontSize: "13px",
+            textAlign: "center",
+            lineHeight: "1.8",
+          }}
+        >
+          <div>Designed & Developed by Ghoncheh Ataei</div>
+          <div>© 2026 All Rights Reserved.</div>
         </div>
-      </Dropdown>
+
+        <Dropdown menu={{ items: languageItems }} trigger={["hover"]}>
+          <div
+            style={{
+              position: "absolute",
+              bottom: "230px",
+              left: "2px",
+              cursor: "pointer",
+              zIndex: 10,
+              width: "48px",
+              height: "48px",
+              border: "1px solid #232d42",
+              borderRadius: "12px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              background: "transparent",
+              transition: "all 0.3s ease",
+            }}
+          >
+            <GlobalOutlined
+              style={{
+                fontSize: "22px",
+                color: "#d1d5db",
+              }}
+            />
+          </div>
+        </Dropdown>
+      </div>
     </div>
-  </div>
-);
+  );
 
   if (!screens.md) {
     return (
@@ -156,21 +164,21 @@ const Sidebar = () => {
           }}
         />
 
-       <Drawer
-  placement="left"
-  open={open}
-  onClose={() => setOpen(false)}
-  width={280}
-  closable={false}
-  styles={{
-    body: {
-      padding: 0,
-      background: "#111827",
-    },
-  }}
->
-  {sidebarContent}
-</Drawer>
+        <Drawer
+          placement="left"
+          open={open}
+          onClose={() => setOpen(false)}
+          width={280}
+          closable={false}
+          styles={{
+            body: {
+              padding: 0,
+              background: "#111827",
+            },
+          }}
+        >
+          {sidebarContent}
+        </Drawer>
       </>
     );
   }
