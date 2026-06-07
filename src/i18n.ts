@@ -13,6 +13,8 @@ i18n.use(initReactI18next).init({
         downloadCV: "Download CV",
         Design: "Designed & Developed by Ghoncheh Ataei",
         footer: "© 2026 All Rights Reserved.",
+        ContactMe: " Contact Me ",
+        AboutMe : "About Me",
 
       },
     },
@@ -24,6 +26,8 @@ i18n.use(initReactI18next).init({
         downloadCV: "Lebenslauf herunterladen",
         Design: "Entworfen & Entwickelt von Ghoncheh Ataei",
         footer: "© 2026 Alle Rechte vorbehalten.",
+        ContactMe: " Kontaktieren Sie mich ",
+        AboutMe : "Über mich",
       },
     },
   },

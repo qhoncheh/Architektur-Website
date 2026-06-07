@@ -2,16 +2,15 @@ import { useEffect } from 'react';
 import { Layout, Row, Col, Typography } from 'antd';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
 const About = () => {
 const photoUrl = '/112.png';
-const textStyle = {
-    color: "#9CA3AF",
-    fontSize: "18px",
-    fontWeight: 400,
-  };
+
+const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -59,7 +58,7 @@ const textStyle = {
                   fontWeight: 300,
                 }}
               >
-                About Us 
+                {t("AboutMe")}
               </Title>
 
               <Text

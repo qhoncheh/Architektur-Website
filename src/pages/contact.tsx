@@ -9,11 +9,14 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { IoPhonePortrait } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 const { Content } = Layout;
 const { Title, Text, Link } = Typography;
+
 const Contact = () => {
   const photoUrl = "/113.png";
+  const { t } = useTranslation();
 
   useEffect(() => {
     AOS.init({
@@ -64,7 +67,7 @@ const Contact = () => {
                   fontWeight: 300,
                 }}
               >
-                Contact Me
+                {t("ContactMe")}
               </Title>
 
               <Link href="tel:09116771794">
