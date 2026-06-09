@@ -7,9 +7,9 @@ const { Sider } = Layout;
 const { useBreakpoint } = Grid;
 
 const glassStyle = {
-  background: "linear-gradient(180deg, rgba(255,255,255,0.06), rgba(17,24,39,0.25))",
-  backdropFilter: "blur(18px) saturate(180%)",
-  WebkitBackdropFilter: "blur(18px) saturate(180%)",
+  background: "linear-gradient(180deg, #636161, rgba(9, 13, 20, 25))",
+  backdropFilter: "blur(80px) saturate(180%)",
+  WebkitBackdropFilter: "blur(80px) saturate(180%)",
   borderRight: "1px solid rgba(255,255,255,0.12)",
   boxShadow: "0 10px 40px rgba(0,0,0,0.45)",
 };
@@ -46,8 +46,8 @@ const Sidebar = () => {
             padding: 0,
           }}
           maskStyle={{
-            backdropFilter: "blur(6px)",
-            WebkitBackdropFilter: "blur(6px)",
+            backdropFilter: "blur(80px)",
+            WebkitBackdropFilter: "blur(80px)",
             background: "rgba(0,0,0,0.25)",
           }}
         >
