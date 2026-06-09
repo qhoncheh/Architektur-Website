@@ -8,7 +8,7 @@ const slides = [
   },
   {
     id: 2,
-    text: "متن اسلاید ۲",
+    text: "متن تتتتتتتتتتتتتت ۲",
     images: ["عکس بزرگ ۲", "عکس کوچک ۱-۲", "عکس کوچک ۲-۲", "عکس کوچک ۳-۲"],
   },
 ];
@@ -16,9 +16,7 @@ const slides = [
 const Project = () => {
   const [current, setCurrent] = useState(0);
   const slide = slides[current];
-  
   const [currentImages, setCurrentImages] = useState(slide.images);
-
   const changeSlide = (newIndex) => {
     setCurrent(newIndex);
     setCurrentImages(slides[newIndex].images);
@@ -41,18 +39,16 @@ const Project = () => {
         <div className="border border-gray-300 w-2/3 p-4">
           {slide.text}
         </div>
-
         <div className="flex flex-col w-2/3 gap-4">
-          <div className="border border-gray-300 grow p-4 text-center h-80 flex items-center justify-center">
+          <div className="border  border-gray-300 grow p-4 text-center h-80 flex items-center justify-center">
             {currentImages[0]}
           </div>
-
           <div className="flex flex-row gap-4 h-32">
             {currentImages.slice(1).map((img, index) => (
               <button
                 key={index}
                 onClick={() => swapImages(index + 1)}
-                className="border border-gray-300 flex-1 hover:border-blue-500 transition-all"
+                className="border border-gray-300 flex-1 cursor-pointer hover:border-blue-500 transition-all"
               >
                 {img}
               </button>
@@ -60,7 +56,6 @@ const Project = () => {
           </div>
         </div>
       </div>
-
       <div className="flex justify-between mt-4">
         <button onClick={() => changeSlide((current - 1 + slides.length) % slides.length)} className="px-4 py-2 border rounded">قبلی</button>
         <button onClick={() => changeSlide((current + 1) % slides.length)} className="px-4 py-2 border rounded">بعدی</button>
