@@ -11,7 +11,15 @@ const Contact = lazy(() => import("./pages/contact"));
 
 function App() {
   return (
-    <div className="min-h-screen flex bg-gray-800">
+    <div
+      className="min-h-screen flex"
+      style={{
+        backgroundImage: "linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), url('/10.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className="flex w-full">
         <Sidebar />
         <div className="flex justify-center items-center w-full text-gray-300 text-base">

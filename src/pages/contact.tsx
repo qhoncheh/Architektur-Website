@@ -36,7 +36,7 @@ const Contact = () => {
     <Layout
       style={{
         minHeight: "100vh",
-        backgroundColor: "#1F2937",
+        backgroundColor: "transparent",
       }}
     >
       <Content

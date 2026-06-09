@@ -23,7 +23,7 @@ const { t } = useTranslation();
       className="site-layout"
       style={{
         minHeight: '100vh',
-        backgroundColor: '#1F2937',
+        backgroundColor: 'transparent',
       }}
     >
       <Content

@@ -6,6 +6,14 @@ import SidebarContent from "./content/content";
 const { Sider } = Layout;
 const { useBreakpoint } = Grid;
 
+const glassStyle = {
+  background: "linear-gradient(180deg, rgba(255,255,255,0.06), rgba(17,24,39,0.25))",
+  backdropFilter: "blur(18px) saturate(180%)",
+  WebkitBackdropFilter: "blur(18px) saturate(180%)",
+  borderRight: "1px solid rgba(255,255,255,0.12)",
+  boxShadow: "0 10px 40px rgba(0,0,0,0.45)",
+};
+
 const Sidebar = () => {
   const screens = useBreakpoint();
   const [open, setOpen] = useState(false);
@@ -33,8 +41,14 @@ const Sidebar = () => {
           onClose={() => setOpen(false)}
           width={280}
           closable={false}
-          styles={{
-            body: { padding: 0, background: "#111827" },
+          bodyStyle={{
+            ...glassStyle,
+            padding: 0,
+          }}
+          maskStyle={{
+            backdropFilter: "blur(6px)",
+            WebkitBackdropFilter: "blur(6px)",
+            background: "rgba(0,0,0,0.25)",
           }}
         >
           <SidebarContent />
@@ -47,7 +61,10 @@ const Sidebar = () => {
     <Sider
       width={300}
       theme="dark"
-      style={{ minHeight: "100vh", background: "#111827" }}
+      style={{
+        minHeight: "100vh",
+        ...glassStyle,
+      }}
     >
       <SidebarContent />
     </Sider>

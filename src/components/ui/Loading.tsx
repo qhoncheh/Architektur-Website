@@ -2,7 +2,7 @@
 
 const Loading = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-800 text-gray-100 p-4">
+    <div className="min-h-screen flex items-center justify-center text-gray-100 p-4">
       <div className="flex flex-col items-center gap-4">
         <div className="flex gap-2 items-center justify-center">
           <div className="w-4 h-4 rounded-full bg-[#d991c2] animate-bounce" />
