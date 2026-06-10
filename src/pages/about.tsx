@@ -5,7 +5,9 @@ import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
 
 const { Content } = Layout;
-const { Title, Text } = Typography;
+// const { Title, Text } = Typography;
+const { Title, Paragraph } = Typography;
+
 const About = () => {
 const photoUrl = '/112.png';
 const { t } = useTranslation();
@@ -60,26 +62,19 @@ const { t } = useTranslation();
                 {t("AboutMe")}
               </Title>
 
-              <Text
+
+              <Paragraph
                 style={{
                   fontSize: '1rem',
                   color: '#9CA3AF',
                   lineHeight: '1.75',
+                  textAlign: 'justify',
+                  whiteSpace: 'pre-line',
+                  marginBottom: 0,
                 }}
               >
-                این یک متن نمونه است که در سمت چپ قرار می‌گیرد. متن نمونه
-                این یک متن نمونه است که در سمت چپ قرار می‌گیرد. متن نمونه
-                این یک متن نمونه است که در سمت چپ قرار می‌گیرد. متن نمونه
-                این یک متن نمونه است که در سمت چپ قرار می‌گیرد. متن نمونه
-                این یک متن نمونه است که در سمت چپ قرار می‌گیرد. متن نمونه
-                این یک متن نمونه است که در سمت چپ قرار می‌گیرد. متن نمونه
-                این یک متن نمونه است که در سمت چپ قرار می‌گیرد. متن نمونه
-                این یک متن نمونه است که در سمت چپ قرار می‌گیرد. متن نمونه
-                این یک متن نمونه است که در سمت چپ قرار می‌گیرد. متن نمونه
-                این یک متن نمونه است که در سمت چپ قرار می‌گیرد. متن نمونه
-                است که در سمت چپ قرار می‌گیرد. متن نمونه است که در سمت چپ
-                قرار می‌گیرد. متن نمونه است که در سمت چپ قرار می‌گیرد.
-              </Text>
+                {t("AboutMeText")}
+              </Paragraph>
             </div>
           </Col>
 
