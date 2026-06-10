@@ -9,7 +9,6 @@ import SidebarContent from "./content/content";
 
 const { Sider } = Layout;
 const { useBreakpoint } = Grid;
-
 const glassStyle = {
   background: "linear-gradient(180deg, #636161, rgba(9, 13, 20, 0.95))",
   backdropFilter: "blur(80px) saturate(180%)",
@@ -20,9 +19,7 @@ const glassStyle = {
 
 const Sidebar = () => {
   const screens = useBreakpoint();
-
   const [open, setOpen] = useState(false);
-
   const [collapsed, setCollapsed] = useState(true);
 
   if (!screens.md) {

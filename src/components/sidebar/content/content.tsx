@@ -11,7 +11,6 @@ import LanguageToggle from "../language/language";
 const SidebarContent = ({ collapsed = false }) => {
   const location = useLocation();
   const { t } = useTranslation();
-
   const menuItems = [
     {
       key: "/",
