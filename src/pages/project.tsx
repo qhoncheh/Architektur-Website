@@ -25,7 +25,6 @@ const Project = () => {
 
   const swapImages = (index:number) => {
     if (index === 0) return;
-
     const newImages = [...currentImages];
     const temp = newImages[0]; 
     newImages[0] = newImages[index];
@@ -63,13 +62,11 @@ const Project = () => {
           className="px-4 py-2 cursor-pointer rounded-full  border border-gray-600 transition-all flex items-center gap-2"
         >
           <FaArrowLeft />
-          
         </button>
         <button 
           onClick={() => changeSlide((current + 1) % slides.length)} 
           className="px-4 py-2 cursor-pointer rounded-full  border-gray-600 border  transition-all flex items-center gap-2"
         >
-
           <FaArrowRight />
         </button>
       </div>
