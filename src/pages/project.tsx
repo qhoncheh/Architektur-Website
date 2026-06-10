@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const slides = [
   {
@@ -57,8 +58,20 @@ const Project = () => {
         </div>
       </div>
       <div className="flex justify-between mt-4">
-        <button onClick={() => changeSlide((current - 1 + slides.length) % slides.length)} className="px-4 py-2 cursor-pointer rounded-full border ">قبلی</button>
-        <button onClick={() => changeSlide((current + 1) % slides.length)} className="px-4 py-2 cursor-pointer rounded-full border">بعدی</button>
+        <button 
+          onClick={() => changeSlide((current - 1 + slides.length) % slides.length)} 
+          className="px-4 py-2 cursor-pointer rounded-full  border border-gray-600 transition-all flex items-center gap-2"
+        >
+          <FaArrowLeft />
+          
+        </button>
+        <button 
+          onClick={() => changeSlide((current + 1) % slides.length)} 
+          className="px-4 py-2 cursor-pointer rounded-full  border-gray-600 border  transition-all flex items-center gap-2"
+        >
+
+          <FaArrowRight />
+        </button>
       </div>
     </div>
   );
