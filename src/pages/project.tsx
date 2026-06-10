@@ -57,8 +57,8 @@ const Project = () => {
         </div>
       </div>
       <div className="flex justify-between mt-4">
-        <button onClick={() => changeSlide((current - 1 + slides.length) % slides.length)} className="px-4 py-2 border rounded">قبلی</button>
-        <button onClick={() => changeSlide((current + 1) % slides.length)} className="px-4 py-2 border rounded">بعدی</button>
+        <button onClick={() => changeSlide((current - 1 + slides.length) % slides.length)} className="px-4 py-2 cursor-pointer rounded-full border ">قبلی</button>
+        <button onClick={() => changeSlide((current + 1) % slides.length)} className="px-4 py-2 cursor-pointer rounded-full border">بعدی</button>
       </div>
     </div>
   );
