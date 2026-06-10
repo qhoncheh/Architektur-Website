@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { Layout, Button, Drawer, Grid } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
+import {
+  MenuOutlined,
+  MenuFoldOutlined,
+  MenuUnfoldOutlined,
+} from "@ant-design/icons";
 import SidebarContent from "./content/content";
 
 const { Sider } = Layout;
 const { useBreakpoint } = Grid;
 
 const glassStyle = {
-  background: "linear-gradient(180deg, #636161, rgba(9, 13, 20, 25))",
+  background: "linear-gradient(180deg, #636161, rgba(9, 13, 20, 0.95))",
   backdropFilter: "blur(80px) saturate(180%)",
   WebkitBackdropFilter: "blur(80px) saturate(180%)",
   borderRight: "1px solid rgba(255,255,255,0.12)",
@@ -16,7 +20,10 @@ const glassStyle = {
 
 const Sidebar = () => {
   const screens = useBreakpoint();
+
   const [open, setOpen] = useState(false);
+
+  const [collapsed, setCollapsed] = useState(true);
 
   if (!screens.md) {
     return (
@@ -28,7 +35,7 @@ const Sidebar = () => {
           style={{
             position: "fixed",
             top: 20,
-            left: 20,
+            left: 30,
             zIndex: 1000,
             color: "#d1d5db",
             fontSize: "24px",
@@ -46,12 +53,12 @@ const Sidebar = () => {
             padding: 0,
           }}
           maskStyle={{
-            backdropFilter: "blur(80px)",
-            WebkitBackdropFilter: "blur(80px)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
             background: "rgba(0,0,0,0.25)",
           }}
         >
-          <SidebarContent />
+          <SidebarContent collapsed={false} />
         </Drawer>
       </>
     );
@@ -60,13 +67,43 @@ const Sidebar = () => {
   return (
     <Sider
       width={300}
-      theme="dark"
+      collapsed={collapsed}
+      collapsedWidth={90}
+      trigger={null}
       style={{
         minHeight: "100vh",
+        position: "relative",
+        overflow: "hidden",
+        transition: "all .4s cubic-bezier(.4,0,.2,1)",
         ...glassStyle,
       }}
     >
-      <SidebarContent />
+      <Button
+        type="text"
+        icon={
+          collapsed ? (
+            <MenuUnfoldOutlined />
+          ) : (
+            <MenuFoldOutlined />
+          )
+        }
+        onClick={() => setCollapsed((prev) => !prev)}
+        style={{
+          position: "absolute",
+          top: 16,
+          right: 26,
+          zIndex: 100,
+          color: "#fff",
+          width: 42,
+          height: 42,
+          borderRadius: "12px",
+          background: "rgba(255,255,255,.08)",
+          border: "1px solid rgba(255,255,255,.08)",
+          backdropFilter: "blur(20px)",
+        }}
+      />
+
+      <SidebarContent collapsed={collapsed} />
     </Sider>
   );
 };

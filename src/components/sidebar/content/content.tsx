@@ -1,24 +1,44 @@
 import { Menu, Button } from "antd";
-// import { DownloadOutlined } from "@ant-design/icons";
+import {
+  UserOutlined,
+  FolderOpenOutlined,
+  MailOutlined,
+} from "@ant-design/icons";
 import { NavLink, useLocation } from "react-router";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "../language/language";
 
-const SidebarContent = () => {
+const SidebarContent = ({ collapsed = false }) => {
   const location = useLocation();
   const { t } = useTranslation();
+
   const menuItems = [
     {
       key: "/",
-      label: <NavLink to="/" style={{ fontWeight : "300"}}>{t("projects")}</NavLink>
+      icon: <FolderOpenOutlined />,
+      label: (
+        <NavLink to="/" style={{ fontWeight: "300" }}>
+          {t("projects")}
+        </NavLink>
+      ),
     },
     {
       key: "/about",
-      label: <NavLink to="/about" style={{ fontWeight : "300"}}>{t("about")}</NavLink>,
+      icon: <UserOutlined />,
+      label: (
+        <NavLink to="/about" style={{ fontWeight: "300" }}>
+          {t("about")}
+        </NavLink>
+      ),
     },
     {
       key: "/contact",
-      label: <NavLink to="/contact" style={{ fontWeight : "300"}}>{t("contact")}</NavLink>,
+      icon: <MailOutlined />,
+      label: (
+        <NavLink to="/contact" style={{ fontWeight: "300" }}>
+          {t("contact")}
+        </NavLink>
+      ),
     },
   ];
 
@@ -29,7 +49,7 @@ const SidebarContent = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        padding: "32px 20px",
+        padding: collapsed ? "70px 10px 20px" : "70px 20px 32px",
         background: "#111827",
         position: "relative",
       }}
@@ -38,46 +58,53 @@ const SidebarContent = () => {
         <Menu
           theme="dark"
           mode="inline"
+          inlineCollapsed={collapsed}
           selectedKeys={[location.pathname]}
           items={menuItems}
           style={{
             border: "none",
             background: "transparent",
-            textAlign: "center",
           }}
         />
       </div>
 
-      <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-        <Button
-          // icon={<DownloadOutlined />}
-          size="large"
-          block
-          style={{
-            borderRadius: "999px",
-            background: "#232d42",
-            borderColor: "#232d42",
-            color: "#fff",
-            height: "50px",
-          }}
-        >
-          {t("downloadCV")}
-        </Button>
-
+      {!collapsed && (
         <div
           style={{
-            color: "#9ca3af",
-            fontSize: "13px",
-            textAlign: "center",
-            lineHeight: "1.8",
+            display: "flex",
+            flexDirection: "column",
+            gap: "20px",
           }}
         >
-          <div>{t("Design")}</div>
-          <div>{t("footer")}</div>
-        </div>
+          <Button
+            size="large"
+            block
+            style={{
+              borderRadius: "999px",
+              background: "#232d42",
+              borderColor: "#232d42",
+              color: "#fff",
+              height: "50px",
+            }}
+          >
+            {t("downloadCV")}
+          </Button>
 
-        <LanguageToggle />
-      </div>
+          <div
+            style={{
+              color: "#9ca3af",
+              fontSize: "13px",
+              textAlign: "center",
+              lineHeight: "1.8",
+            }}
+          >
+            <div>{t("Design")}</div>
+            <div>{t("footer")}</div>
+          </div>
+
+          <LanguageToggle />
+        </div>
+      )}
     </div>
   );
 };
