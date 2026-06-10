@@ -18,12 +18,12 @@ const Project = () => {
   const [current, setCurrent] = useState(0);
   const slide = slides[current];
   const [currentImages, setCurrentImages] = useState(slide.images);
-  const changeSlide = (newIndex) => {
+  const changeSlide = (newIndex:number) => {
     setCurrent(newIndex);
     setCurrentImages(slides[newIndex].images);
   };
 
-  const swapImages = (index) => {
+  const swapImages = (index:number) => {
     if (index === 0) return;
 
     const newImages = [...currentImages];
