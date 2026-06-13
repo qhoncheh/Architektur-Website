@@ -21,9 +21,7 @@ In every project, I strive to create a balanced harmony between the client's req
 With a flexible design approach and experience in various architectural styles, my goal is to develop designs that not only possess a compelling visual identity but are also functionally thoughtful and meet the real-world demands of execution.
 
 I view each project as an opportunity to create sustainable, characterful, and user-oriented spaces through creative and precise planning.
-
-Motto:
-Redefining spaces – beyond the boundaries of styles.`,
+`,
       },
     },
 
