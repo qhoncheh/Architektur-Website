@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
 
 const { Content } = Layout;
-// const { Title, Text } = Typography;
 const { Title, Paragraph } = Typography;
 
 const About = () => {
@@ -66,7 +65,7 @@ const { t } = useTranslation();
               <Paragraph
                 style={{
                   fontSize: '1rem',
-                  color: '#9CA3AF',
+                  color: '#9CA3AF', 
                   lineHeight: '1.75',
                   textAlign: 'justify',
                   whiteSpace: 'pre-line',
@@ -74,7 +73,7 @@ const { t } = useTranslation();
                 }}
               >
                 {t("AboutMeText")}
-              </Paragraph>
+              </Paragraph> 
             </div>
           </Col>
 
