@@ -16,10 +16,10 @@ const slides = [
     id: 2,
     text: "متن۲",
     images: [
-      "/projects/second/child room.jpg",
-      "/projects/first/thumb1-2.jpg",
-      "/projects/first/thumb2-2.jpg",
-      "/projects/first/thumb3-2.jpg"
+      "/projects/second/2.jpg",
+      "/projects/second/22.jpg",
+      "/projects/second/222.jpg",
+      "/projects/second/2222.jpg"
     ],
   },
   {
