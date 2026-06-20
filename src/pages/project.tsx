@@ -6,10 +6,10 @@ const slides = [
     id: 1,
     text: "متن اسلاید ۱",
     images: [
-      "/projects/first/0-double living room.jpg",
-      "/projects/first/0-living room 01.jpg",
-      "/projects/first/0-living room 2.jpg",
-      "/projects/first/0-Tv wall.jpg"
+      "/projects/third/3-asli.jpg",
+      "/projects/third/3.jpg",
+      "/projects/third/33.jpg",
+      "/projects/third/333.jpg"
     ],
   },
   {
@@ -20,6 +20,16 @@ const slides = [
       "/projects/first/thumb1-2.jpg",
       "/projects/first/thumb2-2.jpg",
       "/projects/first/thumb3-2.jpg"
+    ],
+  },
+  {
+    id: 3,
+    text: "متن۲",
+    images: [
+      "/projects/first/0-double living room.jpg",
+      "/projects/first/0-living room 01.jpg",
+      "/projects/first/0-living room 2.jpg",
+      "/projects/first/0-Tv wall.jpg"
     ],
   },
 ];
