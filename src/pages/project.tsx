@@ -56,15 +56,15 @@ const Project = () => {
   return (
     <div className="w-full p-4 m-4">
       <div className="flex flex-row items-stretch justify-center gap-4">
-        <div className="border  w-2/3 p-4">
+        <div className="border w-2/3 p-4 rounded-md">
           {slide.text}
         </div>
         <div className="flex flex-col w-2/3 gap-4">
-          <div className=" grow p-4 text-center h-80 flex items-center justify-center overflow-hidden">
+          <div className="grow p-4 text-center h-80 flex items-center justify-center overflow-hidden">
             <img 
               src={currentImages[0]} 
               alt="main"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-md"
             />
           </div>
           <div className="flex flex-row gap-4 h-32">
@@ -72,12 +72,12 @@ const Project = () => {
               <button
                 key={index}
                 onClick={() => swapImages(index + 1)}
-                className=" flex-1 cursor-pointer hover:border-blue-500 transition-all overflow-hidden"
+                className="flex-1 cursor-pointer hover:border-blue-500 transition-all overflow-hidden rounded-md"
               >
                 <img 
                   src={img} 
                   alt={`thumb-${index}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110 rounded-lg"
                 />
               </button>
             ))}
@@ -87,13 +87,13 @@ const Project = () => {
       <div className="flex justify-between mt-4">
         <button 
           onClick={() => changeSlide((current - 1 + slides.length) % slides.length)} 
-          className="px-4 py-2 cursor-pointer rounded-full border border-gray-600 transition-all flex items-center gap-2"
+          className="px-4 py-2 cursor-pointer rounded-full border border-gray-600 transition-all flex items-center gap-2 "
         >
           <FaArrowLeft />
         </button>
         <button 
           onClick={() => changeSlide((current + 1) % slides.length)} 
-          className="px-4 py-2 cursor-pointer rounded-full border-gray-600 border transition-all flex items-center gap-2"
+          className="px-4 py-2 cursor-pointer rounded-full border-gray-600 border transition-all flex items-center gap-2 "
         >
           <FaArrowRight />
         </button>
