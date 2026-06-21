@@ -28,10 +28,7 @@ const Project = () => {
         </Col>
       </Row>
 
-      <ProjectNavigation
-        onPrev={handlePrev}
-        onNext={handleNext}
-      />
+      <ProjectNavigation onPrev={handlePrev} onNext={handleNext} />
     </div>
   );
 };

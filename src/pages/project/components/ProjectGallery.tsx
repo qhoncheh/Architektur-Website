@@ -5,9 +5,7 @@ interface ProjectGalleryProps {
   images: string[];
 }
 
-const ProjectGallery = ({
-  images,
-}: ProjectGalleryProps) => {
+const ProjectGallery = ({ images }: ProjectGalleryProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (

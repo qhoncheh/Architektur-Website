@@ -1,23 +1,17 @@
 import { Button } from "antd";
-import {
-  LeftOutlined,
-  RightOutlined,
-} from "@ant-design/icons";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 type Props = {
   onPrev: () => void;
   onNext: () => void;
 };
 
-const ProjectNavigation = ({
-  onPrev,
-  onNext,
-}: Props) => {
+const ProjectNavigation = ({ onPrev, onNext }: Props) => {
   return (
     <div className="flex justify-between mt-6">
       <Button
         type="text"
-        icon={<LeftOutlined  style={{ color: "#fff" }}/>}
+        icon={<LeftOutlined style={{ color: "#fff" }} />}
         onClick={onPrev}
         style={{ color: "#fff" }}
       >

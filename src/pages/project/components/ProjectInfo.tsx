@@ -46,7 +46,7 @@ const ProjectInfo = ({ project }: Props) => {
           <Text style={{ color: "#6d83cc" }}>
             <EnvironmentOutlined /> Location :
           </Text>
-          <Text style={{ color: "#fff" , }}> {project.location}</Text>
+          <Text style={{ color: "#fff" }}> {project.location}</Text>
         </div>
 
         <div>
