@@ -2,6 +2,7 @@ import {
   Card,
   Typography,
   Space,
+  Divider,
 } from "antd";
 
 import {
@@ -37,7 +38,7 @@ type Props = {
 const ProjectInfo = ({ project }: Props) => {
   return (
     <Card bordered={false} className="h-full !bg-transparent shadow-none">
-      <div className="text-center mb-6">
+      <div className="text-center mb-14">
         <Title level={3} style={{ color: "#Fff" }}>
           {project.title}
         </Title>
@@ -86,7 +87,9 @@ const ProjectInfo = ({ project }: Props) => {
         </div>
       </Space>
 
-      <Paragraph className="mt-6" style={{ color: "#cac3c3" }}>
+      <Divider style={{ borderColor: "#474141", margin: "24px 0" }} />
+
+      <Paragraph className="mt-8" style={{ color: "#cac3c3" }}>
         {project.text}
       </Paragraph>
     </Card>
