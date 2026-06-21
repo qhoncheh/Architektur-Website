@@ -1,18 +1,13 @@
 import { useEffect } from "react";
 import { Layout, Row, Col, Typography } from "antd";
-import {
-  PhoneOutlined,
-  MailOutlined,
-  LinkedinOutlined,
-} from "@ant-design/icons";
-import { FaTelegramPlane } from "react-icons/fa";
-import { IoPhonePortrait } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
+import { contactData } from "../../components/contact/contactData";
+import ContactItem from "../../components/contact/ContactItem";
 
 const { Content } = Layout;
-const { Title, Text, Link } = Typography;
+const { Title } = Typography;
 
 const Contact = () => {
   const photoUrl = "/113.png";
@@ -33,19 +28,10 @@ const Contact = () => {
   };
 
   return (
-    <Layout
-      style={{
-        minHeight: "100vh",
-        backgroundColor: "transparent",
-      }}
-    >
-      <Content
-        style={{
-          padding: "50px",
-          paddingTop: "100px",
-        }}
-      >
+    <Layout style={{ minHeight: "100vh", backgroundColor: "transparent" }}>
+      <Content style={{ padding: "50px", paddingTop: "100px" }}>
         <Row gutter={[24, 24]} align="middle" data-aos="fade-up">
+          
           <Col xs={24} sm={24} md={24} lg={12}>
             <div
               style={{
@@ -61,7 +47,6 @@ const Contact = () => {
                 level={3}
                 style={{
                   marginBottom: "30px",
-                  textAlign: "center",
                   fontSize: "1.5rem",
                   color: "#FFFFFF",
                   fontWeight: 300,
@@ -70,88 +55,13 @@ const Contact = () => {
                 {t("ContactMe")}
               </Title>
 
-              <Link href="tel:09116771794">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "12px",
-                  }}
-                >
-                  <PhoneOutlined style={{ color: "#9CA3AF" }} />
-                  <Text style={textStyle}>09116771794</Text>
-                </div>
-              </Link>
-
-              <Link href="tel:09356944705">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "12px",
-                  }}
-                >
-                  <IoPhonePortrait
-                    style={{ color: "#9CA3AF", fontSize: "18px" }}
-                  />
-                  <Text style={textStyle}>09356944705</Text>
-                </div>
-              </Link>
-
-              <Link
-                href="https://www.linkedin.com/in/ghazaleh-ataei-b54829192/"
-                target="_blank"
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "12px",
-                  }}
-                >
-                  <LinkedinOutlined
-                    style={{ color: "#9CA3AF", fontSize: "18px" }}
-                  />
-                  <Text style={textStyle}>ghazaleh_ataei</Text>
-                </div>
-              </Link>
-
-              <Link href="https://t.me/ghazaleh_ataei" target="_blank">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "12px",
-                  }}
-                >
-                  <FaTelegramPlane
-                    style={{ color: "#9CA3AF", fontSize: "18px" }}
-                  />
-                  <Text style={textStyle}>@ghazaleh_ataei</Text>
-                </div>
-              </Link>
-
-              <Link href="mailto:ghazalehataei.architect@gmail.com">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "12px",
-                  }}
-                >
-                  <MailOutlined
-                    style={{ color: "#9CA3AF", fontSize: "18px" }}
-                  />
-                  <Text style={textStyle}>
-                    ghazalehataei.architect@gmail.com
-                  </Text>
-                </div>
-              </Link>
+              {contactData.map((item, index) => (
+                <ContactItem
+                  key={index}
+                  {...item}
+                  textStyle={textStyle}
+                />
+              ))}
             </div>
           </Col>
 
@@ -167,8 +77,7 @@ const Contact = () => {
               <img
                 src={photoUrl}
                 alt="Contact"
-                data-aos="fade-up"
-                data-aos-delay="300"
+
                 style={{
                   width: "90%",
                   height: "400px",
@@ -178,6 +87,7 @@ const Contact = () => {
               />
             </div>
           </Col>
+
         </Row>
       </Content>
     </Layout>

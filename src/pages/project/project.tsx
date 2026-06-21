@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Row, Col } from "antd";
-import ProjectInfo from "./components/ProjectInfo";
-import ProjectGallery from "./components/ProjectGallery";
-import ProjectNavigation from "./components/ProjectNavigation";
-import { slides } from "./components/projectsData";
+import ProjectInfo from "../../components/projects/ProjectInfo";
+import ProjectGallery from "../../components/projects/ProjectGallery";
+import ProjectNavigation from "../../components/projects/ProjectNavigation";
+import { slides } from "../../components/projects/projectsData";
 
 const Project = () => {
   const [current, setCurrent] = useState(0);
