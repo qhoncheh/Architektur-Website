@@ -1,5 +1,6 @@
 import { Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   onPrev: () => void;
@@ -7,6 +8,8 @@ type Props = {
 };
 
 const ProjectNavigation = ({ onPrev, onNext }: Props) => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex justify-between mt-6">
       <Button
@@ -15,7 +18,7 @@ const ProjectNavigation = ({ onPrev, onNext }: Props) => {
         onClick={onPrev}
         style={{ color: "#fff" }}
       >
-        Previous
+        {t("Previous")}
       </Button>
 
       <Button
@@ -25,7 +28,7 @@ const ProjectNavigation = ({ onPrev, onNext }: Props) => {
         onClick={onNext}
         style={{ color: "#fff" }}
       >
-        Next
+        {t("Next")}
       </Button>
     </div>
   );

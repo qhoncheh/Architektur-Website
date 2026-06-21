@@ -13,6 +13,8 @@ i18n.use(initReactI18next).init({
         footer: "© 2026 All Rights Reserved.",
         ContactMe: "Contact Me",
         AboutMe: "About Me",
+        Previous: "Previous",
+        Next:"Next",
 
         AboutMeText: `For me, architecture is much more than designing a building – it is a process of shaping spaces that enhance people's quality of life.
         In every project, I strive to create a balanced harmony between the client's requirements, the site's characteristics, and the aesthetic principles of architecture.
@@ -32,6 +34,9 @@ i18n.use(initReactI18next).init({
         footer: "© 2026 Alle Rechte vorbehalten.",
         ContactMe: "Kontaktieren Sie mich",
         AboutMe: "Über mich",
+        Previous:"Zurück",
+        Next:"Weiter",
+
 
         AboutMeText: `Architektur ist für mich weit mehr als das Entwerfen eines Gebäudes – sie ist ein Prozess der Gestaltung von Räumen, die die Lebensqualität der Menschen verbessern.
         In jedem Projekt strebe ich danach, ein ausgewogenes Gleichgewicht zwischen den Anforderungen des Auftraggebers, den Besonderheiten des Standorts und den ästhetischen Prinzipien der Architektur zu schaffen.
