@@ -28,10 +28,7 @@ const slides = [
     landArea: "450 sqm",
     builtArea: "780 sqm",
     designTeam: {
-      architect: "Mehrdad Ahmadi",
-      structural: "Reza Karimi",
-      mechanical: "Sara Mohammadi",
-      graphic: "Tarh-e No Studio",
+      architect: "Ghazaleh Ataei",
     },
     year: {
       design: "2025",
@@ -54,10 +51,7 @@ const slides = [
     landArea: "1200 sqm",
     builtArea: "3500 sqm",
     designTeam: {
-      architect: "Mehrdad Ahmadi",
-      structural: "Ali Naderi",
-      mechanical: "Narges Hosseini",
-      graphic: "Memarnama Studio",
+      architect: "Ghazaleh Ataei",
     },
     year: {
       design: "2024",
@@ -80,10 +74,7 @@ const slides = [
     landArea: "200 sqm",
     builtArea: "340 sqm",
     designTeam: {
-      architect: "Mehrdad Ahmadi",
-      structural: "Peyman Ghasemi",
-      mechanical: "Leila Rezaei",
-      graphic: "Haft Studio",
+      architect: "Ghazaleh Ataei",
     },
     year: {
       design: "2025",
@@ -205,21 +196,13 @@ const Project = () => {
 
               <div>
                 <Text strong style={{ color: "#60a5fa" }}>
-                  <TeamOutlined /> Design Team :
+                  <TeamOutlined /> Design By :
+                </Text>
+                <Text style={{ color: "#d1d5db" }}>
+                  {" "}
+                 {slide.designTeam.architect} 
                 </Text>
 
-                <Text
-                  style={{
-                    color: "#9ca3af",
-                    display: "block",
-                    marginTop: 4,
-                  }}
-                >
-                  Architect: {slide.designTeam.architect} |
-                  Structural: {slide.designTeam.structural} |
-                  Mechanical: {slide.designTeam.mechanical} |
-                  Graphic: {slide.designTeam.graphic}
-                </Text>
               </div>
             </Space>
 
