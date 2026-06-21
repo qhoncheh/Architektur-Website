@@ -5,7 +5,7 @@ import Sidebar from "./components/sidebar/sidebar";
 import Loading from "./components/ui/Loading";
 import "aos/dist/aos.css";
 
-const Project = lazy(() => import("./pages/project"));
+const Project = lazy(() => import("./pages/project/project"));
 const About = lazy(() => import("./pages/about"));
 const Contact = lazy(() => import("./pages/contact"));
 
