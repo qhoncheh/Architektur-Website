@@ -31,7 +31,6 @@ const Contact = () => {
     <Layout style={{ minHeight: "100vh", backgroundColor: "transparent" }}>
       <Content style={{ padding: "50px", paddingTop: "100px" }}>
         <Row gutter={[24, 24]} align="middle" data-aos="fade-up">
-          
           <Col xs={24} sm={24} md={24} lg={12}>
             <div
               style={{
@@ -56,11 +55,7 @@ const Contact = () => {
               </Title>
 
               {contactData.map((item, index) => (
-                <ContactItem
-                  key={index}
-                  {...item}
-                  textStyle={textStyle}
-                />
+                <ContactItem key={index} {...item} textStyle={textStyle} />
               ))}
             </div>
           </Col>
@@ -77,7 +72,6 @@ const Contact = () => {
               <img
                 src={photoUrl}
                 alt="Contact"
-
                 style={{
                   width: "90%",
                   height: "400px",
@@ -87,7 +81,6 @@ const Contact = () => {
               />
             </div>
           </Col>
-
         </Row>
       </Content>
     </Layout>
