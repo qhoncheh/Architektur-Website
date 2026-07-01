@@ -22,7 +22,6 @@ i18n.use(initReactI18next).init({
         `,
       },
     },
-
     de: {
       translation: {
         projects: "Projekte",
