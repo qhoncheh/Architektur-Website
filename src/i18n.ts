@@ -14,7 +14,7 @@ i18n.use(initReactI18next).init({
         ContactMe: "Contact Me",
         AboutMe: "About Me",
         Previous: "Previous",
-        Next:"Next",
+        Next:"Next", 
 
         AboutMeText: `For me, architecture is much more than designing a building – it is a process of shaping spaces that enhance people's quality of life.
         In every project, I strive to create a balanced harmony between the client's requirements, the site's characteristics, and the aesthetic principles of architecture.

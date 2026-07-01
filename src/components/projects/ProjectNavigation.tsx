@@ -14,9 +14,13 @@ const ProjectNavigation = ({ onPrev, onNext }: Props) => {
     <div className="flex justify-between mt-6">
       <Button
         type="text"
-        icon={<LeftOutlined style={{ color: "#fff"  }} />}
+        icon={<LeftOutlined style={{ color: "#fff" }} />}
         onClick={onPrev}
-        style={{ color: "#fff" , border: "1px solid gray" , borderRadius: "50px"  }}
+        style={{
+          color: "#fff",
+          border: "1px solid gray",
+          borderRadius: "50px",
+        }}
       >
         {t("Previous")}
       </Button>
@@ -26,7 +30,11 @@ const ProjectNavigation = ({ onPrev, onNext }: Props) => {
         icon={<RightOutlined style={{ color: "#fff" }} />}
         iconPosition="end"
         onClick={onNext}
-        style={{ color: "#fff" , border: "1px solid gray" , borderRadius: "50px" }}
+        style={{
+          color: "#fff",
+          border: "1px solid gray",
+          borderRadius: "50px",
+        }}
       >
         {t("Next")}
       </Button>
