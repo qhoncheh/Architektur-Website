@@ -34,7 +34,7 @@ project: {
   villaKhezershahr: {
     titleProject: "Villa Khezershahr",
     subtitle: "Residential – Villa",
-    text: "This contemporary villa embodies modern architectural principles through clean lines, open-plan living areas, and expansive glazing. The design strengthens the connection between indoors and outdoors while simultaneously creating privacy, comfort, and abundant natural light.",
+    text: "This contemporary villa embodies modern architectural principles through clean lines, open-plan living areas, and expansive glazing.  ",
   },
 
   apartmentInterior: {
@@ -84,7 +84,7 @@ project: {
   villaKhezershahr: {
     titleProject: "Villa Khezershahr",
     subtitle: "Wohnhaus – Villa",
-    text: "Diese zeitgenössische Villa verkörpert moderne architektonische Prinzipien durch klare Linien, offen gestaltete Wohnbereiche und großzügige Verglasungen. Das Design stärkt die Verbindung zwischen Innen- und Außenraum und schafft gleichzeitig Privatsphäre, Komfort sowie reichlich natürliches Tageslicht.",
+    text: "Diese zeitgenössische Villa verkörpert moderne architektonische Prinzipien durch klare Linien, offen gestaltete Wohnbereiche und großzügige Verglasungen.  ",
   },
 
   apartmentInterior: {
