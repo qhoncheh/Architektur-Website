@@ -5,40 +5,75 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        projects: "Projects",
-        about: "About",
-        contact: "Contact",
-        downloadCV: "Download CV",
+        menu: {
+          projects: "Projects",
+          about: "About",
+          contact: "Contact",
+          downloadCV: "Download CV",
+        },
+
         Design: "Designed & Developed by Ghoncheh Ataei",
         footer: "© 2026 All Rights Reserved",
         ContactMe: "Contact Me",
         AboutMe: "About Me",
         Previous: "Previous",
-        Next:"Next", 
+        Next: "Next",
+
         AboutMeText: `For me, architecture is much more than designing a building – it is a process of shaping spaces that enhance people's quality of life.
-        In every project, I strive to create a balanced harmony between the client's requirements, the site's characteristics, and the aesthetic principles of architecture.
-        With a flexible design approach and experience in various architectural styles, my goal is to develop designs that not only possess a compelling visual identity but are also functionally thoughtful and meet the real-world demands of execution.
-        I view each project as an opportunity to create sustainable, characterful, and user-oriented spaces through creative and precise planning.
-        `,
+In every project, I strive to create a balanced harmony between the client's requirements, the site's characteristics, and the aesthetic principles of architecture.
+With a flexible design approach and experience in various architectural styles, my goal is to develop designs that not only possess a compelling visual identity but are also functionally thoughtful and meet the real-world demands of execution.
+I view each project as an opportunity to create sustainable, characterful, and user-oriented spaces through creative and precise planning.`,
+ Location: "Location",
+  LandArea: "Land Area",
+  BuiltArea: "Built Area",
+  Year: "Year",
+  Completion: "Completion",
+  DesignBy: "Design",
+  Architect: "Architect",
+        project: {
+          villaKhezershahr: {
+            titleProject:"Villa Khezershahr" , 
+
+            text: `This contemporary villa embraces modern architectural principles through clean lines, open-plan living spaces, and expansive glazing. The design enhances the relationship between the interior and the surrounding environment while providing privacy, comfort, and abundant natural light.`,
+          },
+        },
       },
     },
+
     de: {
       translation: {
-        projects: "Projekte",
-        about: "Über mich",
-        contact: "Kontakt",
-        downloadCV: "Lebenslauf herunterladen",
+        menu: {
+          projects: "Projekte",
+          about: "Über mich",
+          contact: "Kontakt",
+          downloadCV: "Lebenslauf herunterladen",
+        },
+
         Design: "Entworfen & Entwickelt von Ghoncheh Ataei",
         footer: "© 2026 Alle Rechte vorbehalten",
         ContactMe: "Kontaktieren Sie mich",
         AboutMe: "Über mich",
-        Previous:"Zurück",
-        Next:"Weiter",
+        Previous: "Zurück",
+        Next: "Weiter",
+
+
         AboutMeText: `Architektur ist für mich weit mehr als das Entwerfen eines Gebäudes – sie ist ein Prozess der Gestaltung von Räumen, die die Lebensqualität der Menschen verbessern.
-        In jedem Projekt strebe ich danach, ein ausgewogenes Gleichgewicht zwischen den Anforderungen des   Auftraggebers, den Besonderheiten des Standorts und den ästhetischen Prinzipien der Architektur zu schaffen.
-        Mit einem flexiblen Gestaltungsansatz und Erfahrung in unterschiedlichen Architekturstilen ist es mein Ziel, Entwürfe zu entwickeln, die nicht nur eine überzeugende visuelle Identität besitzen, sondern auch funktional durchdacht sind und den realen Anforderungen der Ausführung gerecht werden.
-        Jedes Projekt betrachte ich als eine Gelegenheit, durch kreative und präzise Planung nachhaltige, charakterstarke und nutzungsorientierte Räume zu schaffen.
-        `,
+In jedem Projekt strebe ich danach, ein ausgewogenes Gleichgewicht zwischen den Anforderungen des Auftraggebers, den Besonderheiten des Standorts und den ästhetischen Prinzipien der Architektur zu schaffen.
+Mit einem flexiblen Gestaltungsansatz und Erfahrung in unterschiedlichen Architekturstilen ist es mein Ziel, Entwürfe zu entwickeln, die nicht nur eine überzeugende visuelle Identität besitzen, sondern auch funktional durchdacht sind und den realen Anforderungen der Ausführung gerecht werden.
+Jedes Projekt betrachte ich als eine Gelegenheit, durch kreative und präzise Planung nachhaltige, charakterstarke und nutzungsorientierte Räume zu schaffen.`,
+ Location: "Standort",
+  LandArea: "Grundstücksfläche",
+  BuiltArea: "Bebaute Fläche",
+  Year: "Jahr",
+  DesignBy: "Entwurf",
+  Completion: "Fertigstellung",
+  Architect: "Architekt",
+        project: {
+          villaKhezershahr: {
+            titleProject:"Villa Khezershahr" , 
+            text: `Diese zeitgenössische Villa verkörpert moderne architektonische Prinzipien durch klare Linien, offen gestaltete Wohnbereiche und großzügige Verglasungen. Das Design stärkt die Verbindung zwischen Innen- und Außenraum und schafft gleichzeitig Privatsphäre, Komfort sowie reichlich natürliches Tageslicht.`,
+          },
+        },
       },
     },
   },
