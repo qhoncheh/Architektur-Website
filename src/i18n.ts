@@ -34,21 +34,21 @@ project: {
   villaKhezershahr: {
     titleProject: "Villa Khezershahr",
     subtitle: "Residential – Villa",
-    text: "This contemporary villa embodies modern architectural principles through clean lines, open-plan living areas, and expansive glazing. The design strengthens the connection between indoors and outdoors while simultaneously creating privacy, comfort, and abundant natural light."
+    text: "This contemporary villa embodies modern architectural principles through clean lines, open-plan living areas, and expansive glazing. The design strengthens the connection between indoors and outdoors while simultaneously creating privacy, comfort, and abundant natural light.",
   },
 
   apartmentInterior: {
     titleProject: "Bedroom Design",
     subtitle: "Apartment",
-    text: "This interior renovation focuses on creating warm and functional living spaces..."
+    text: "This interior renovation focuses on creating warm and functional living spaces, combining contemporary aesthetics with practical solutions. Natural materials, soft lighting, and carefully selected furnishings create a comfortable and elegant atmosphere.",
   },
 
   duplexElahieh: {
-    titleProject: "Living Room ",
+    titleProject: "Living Room",
     subtitle: "Apartment",
-    text: "The project transforms an existing duplex apartment into a contemporary residence..."
-  }
-}
+    text: "This living room design emphasizes openness, natural light, and refined materials. The interior balances functionality with elegance, creating a warm and welcoming environment for everyday living.",
+  },
+},
       },
     },
 
@@ -80,12 +80,25 @@ project: {
         DesignBy: "Entwurf",
         Completion: "Fertigstellung",
         Architect: "Architekt",
-        project: {
-          villaKhezershahr: {
-            titleProject:"Villa Khezershahr" , 
-            text: `Diese zeitgenössische Villa verkörpert moderne architektonische Prinzipien durch klare Linien, offen gestaltete Wohnbereiche und großzügige Verglasungen. Das Design stärkt die Verbindung zwischen Innen- und Außenraum und schafft gleichzeitig Privatsphäre, Komfort sowie reichlich natürliches Tageslicht.`,
-          },
-        },
+project: {
+  villaKhezershahr: {
+    titleProject: "Villa Khezershahr",
+    subtitle: "Wohnhaus – Villa",
+    text: "Diese zeitgenössische Villa verkörpert moderne architektonische Prinzipien durch klare Linien, offen gestaltete Wohnbereiche und großzügige Verglasungen. Das Design stärkt die Verbindung zwischen Innen- und Außenraum und schafft gleichzeitig Privatsphäre, Komfort sowie reichlich natürliches Tageslicht.",
+  },
+
+  apartmentInterior: {
+    titleProject: "Schlafzimmergestaltung",
+    subtitle: "Wohnung",
+    text: "Diese Innenraumgestaltung konzentriert sich auf die Schaffung warmer und funktionaler Wohnräume. Natürliche Materialien, sanfte Beleuchtung und sorgfältig ausgewählte Möbel schaffen eine komfortable und elegante Atmosphäre.",
+  },
+
+  duplexElahieh: {
+    titleProject: "Wohnzimmergestaltung",
+    subtitle: "Wohnung",
+    text: "Dieses Wohnzimmerdesign legt den Schwerpunkt auf Offenheit, natürliches Licht und hochwertige Materialien. Der Innenraum verbindet Funktionalität mit Eleganz und schafft eine warme und einladende Wohnatmosphäre.",
+  },
+},
       },
     },
   },
