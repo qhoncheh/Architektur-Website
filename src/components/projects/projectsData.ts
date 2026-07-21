@@ -41,7 +41,7 @@ export const slides = [
     id: "Living Roome Design",
     titleKey: "project.duplexElahieh.titleProject",
     subtitleKey: "project.duplexElahieh.subtitle",
-    location: "Elahieh St., No. 34, Tehran",
+    location: "babol, Mazandaran",
     landArea: "200 sqm",
     builtArea: "340 sqm",
     designTeam: { architect: "Ghazaleh Ataei" },
