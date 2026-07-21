@@ -1,14 +1,14 @@
 export const slides = [
   {
     id: 1,
-    title: "Twin Villa, Niavaran",
+    titleProject: "Vila Khezershahr",
     subtitle: "Residential – Villa",
-    location: "Niavaran St., No. 18, District 1, Tehran",
-    landArea: "450 sqm",
-    builtArea: "780 sqm",
+    location: "Khezershahr, Mazandaran",
+    landArea: "280 sqm",
+    builtArea: "450 sqm",
     designTeam: { architect: "Ghazaleh Ataei" },
     year: { design: "2025", completion: "2026" },
-    text: "The Twin Villa in Niavaran is designed with inspiration from modern and vernacular architecture. Using natural materials and integrating indoor and outdoor spaces, this project offers a unique experience of living within the urban nature.",
+    text: "project.villaKhezershahr.text",
     images: [
       "/projects/third/3-asli.jpg",
       "/projects/third/3.jpg",
@@ -19,14 +19,14 @@ export const slides = [
   },
   {
     id: 2,
-    title: "Zeytoon Residential Complex, Shiraz",
+    titleProject: "Zeytoon Residential Complex, Shiraz",
     subtitle: "Residential – Apartment",
     location: "Zeytoon Blvd., Alley 7, Shiraz",
     landArea: "1200 sqm",
     builtArea: "3500 sqm",
     designTeam: { architect: "Ghazaleh Ataei" },
     year: { design: "2024", completion: "2026" },
-    text: "Zeytoon Residential Complex is designed with an approach to open and flexible apartments. Emphasizing natural lighting and vertical gardens, this project enhances the quality of urban living.",
+    text: "projects.zeytoonResidential.text",
     images: [
       "/projects/second/2.jpg",
       "/projects/second/22.jpg",
@@ -44,7 +44,7 @@ export const slides = [
     builtArea: "340 sqm",
     designTeam: { architect: "Ghazaleh Ataei" },
     year: { design: "2025", completion: "2025" },
-    text: "Renovation of the duplex apartment in Elahieh with a minimalist approach and maximum space utilization. Combining neutral colors and luxury materials, this project creates a modern and peaceful atmosphere.",
+    text: "projects.duplexElahieh.text",
     images: [
       "/projects/first/0-double living room.jpg",
       "/projects/first/0-living room 01.jpg",

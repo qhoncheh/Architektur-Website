@@ -1,16 +1,16 @@
 import { Card, Typography, Space, Divider } from "antd";
-
 import {
   EnvironmentOutlined,
   FieldTimeOutlined,
   HomeOutlined,
   TeamOutlined,
 } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
 
 const { Title, Text, Paragraph } = Typography;
 
 type Project = {
-  title: string;
+  titleProject: string;
   subtitle: string;
   location: string;
   landArea: string;
@@ -31,11 +31,13 @@ type Props = {
 };
 
 const ProjectInfo = ({ project }: Props) => {
+  const { t } = useTranslation();
+
   return (
     <Card bordered={false} className="h-full !bg-transparent shadow-none">
       <div className="text-center mb-14">
-        <Title level={4} style={{ color: "#Fff", fontWeight: "normal" }}>
-          {project.title}
+        <Title level={4} style={{ color: "#fff", fontWeight: "normal" }}>
+          {project.titleProject}
         </Title>
 
         <Text style={{ color: "#9ca3af" }}>{project.subtitle}</Text>
@@ -44,37 +46,38 @@ const ProjectInfo = ({ project }: Props) => {
       <Space direction="vertical" size="middle">
         <div>
           <Text style={{ color: "#6d83cc" }}>
-            <EnvironmentOutlined /> Location :
+            <EnvironmentOutlined /> {t("Location")} :
           </Text>
           <Text style={{ color: "#fff" }}> {project.location}</Text>
         </div>
 
         <div>
           <Text style={{ color: "#6d83cc" }}>
-            <HomeOutlined /> Land Area :
+            <HomeOutlined /> {t("LandArea")} :
           </Text>
           <Text style={{ color: "#fff" }}> {project.landArea}</Text>
         </div>
 
         <div>
           <Text style={{ color: "#6d83cc" }}>
-            <HomeOutlined /> Built Area :
+            <HomeOutlined /> {t("BuiltArea")} :
           </Text>
           <Text style={{ color: "#fff" }}> {project.builtArea}</Text>
         </div>
 
         <div>
           <Text style={{ color: "#6d83cc" }}>
-            <FieldTimeOutlined /> Year :
+            <FieldTimeOutlined /> {t("Year")} :
           </Text>
           <Text style={{ color: "#fff" }}>
-            Design {project.year.design} - Completion {project.year.completion}
+            {t("DesignBy")} {project.year.design} - {t("Completion")}{" "}
+            {project.year.completion}
           </Text>
         </div>
 
         <div>
           <Text style={{ color: "#6d83cc" }}>
-            <TeamOutlined /> Architect :
+            <TeamOutlined /> {t("Architect")} :
           </Text>
           <Text style={{ color: "#fff" }}> {project.designTeam.architect}</Text>
         </div>
@@ -83,7 +86,7 @@ const ProjectInfo = ({ project }: Props) => {
       <Divider style={{ borderColor: "#474141", margin: "24px 0" }} />
 
       <Paragraph className="mt-8" style={{ color: "#cac3c3" }}>
-        {project.text}
+        {t(project.text)}
       </Paragraph>
     </Card>
   );
