@@ -10,12 +10,13 @@ import { useTranslation } from "react-i18next";
 const { Title, Text, Paragraph } = Typography;
 
 type Project = {
-  titleProject: string;
-  subtitle: string;
+  id: string;
+  titleKey: string;
+  subtitleKey: string;
+  textKey: string;
   location: string;
   landArea: string;
   builtArea: string;
-  text: string;
   images: string[];
   year: {
     design: string;
@@ -35,12 +36,14 @@ const ProjectInfo = ({ project }: Props) => {
 
   return (
     <Card bordered={false} className="h-full !bg-transparent shadow-none">
-      <div className="text-center mb-14">
+      <div className="mb-14 text-center">
         <Title level={4} style={{ color: "#fff", fontWeight: "normal" }}>
-          {project.titleProject}
+          {t(project.titleKey)}
         </Title>
 
-        <Text style={{ color: "#9ca3af" }}>{project.subtitle}</Text>
+        <Text style={{ color: "#9ca3af" }}>
+          {t(project.subtitleKey)}
+        </Text>
       </div>
 
       <Space direction="vertical" size="middle">
@@ -79,14 +82,16 @@ const ProjectInfo = ({ project }: Props) => {
           <Text style={{ color: "#6d83cc" }}>
             <TeamOutlined /> {t("Architect")} :
           </Text>
-          <Text style={{ color: "#fff" }}> {project.designTeam.architect}</Text>
+          <Text style={{ color: "#fff" }}>
+            {project.designTeam.architect}
+          </Text>
         </div>
       </Space>
 
       <Divider style={{ borderColor: "#474141", margin: "24px 0" }} />
 
       <Paragraph className="mt-8" style={{ color: "#cac3c3" }}>
-        {t(project.text)}
+        {t(project.textKey)}
       </Paragraph>
     </Card>
   );

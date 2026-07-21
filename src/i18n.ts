@@ -30,13 +30,25 @@ i18n.use(initReactI18next).init({
           Completion: "Completion",
           DesignBy: "Design",
           Architect: "Architect",
-        project: {
-          villaKhezershahr: {
-            titleProject:"Villa Khezershahr" , 
+project: {
+  villaKhezershahr: {
+    titleProject: "Villa Khezershahr",
+    subtitle: "Residential – Villa",
+    text: "This contemporary villa embodies modern architectural principles through clean lines, open-plan living areas, and expansive glazing. The design strengthens the connection between indoors and outdoors while simultaneously creating privacy, comfort, and abundant natural light."
+  },
 
-            text: `This contemporary villa embraces modern architectural principles through clean lines, open-plan living spaces, and expansive glazing. The design enhances the relationship between the interior and the surrounding environment while providing privacy, comfort, and abundant natural light.`,
-          },
-        },
+  apartmentInterior: {
+    titleProject: "Bedroom Design",
+    subtitle: "Apartment",
+    text: "This interior renovation focuses on creating warm and functional living spaces..."
+  },
+
+  duplexElahieh: {
+    titleProject: "Living Room ",
+    subtitle: "Apartment",
+    text: "The project transforms an existing duplex apartment into a contemporary residence..."
+  }
+}
       },
     },
 

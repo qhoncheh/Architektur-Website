@@ -1,15 +1,17 @@
+
+
 export const slides = [
   {
-    id: 1,
-    titleProject: "Vila Khezershahr",
-    subtitle: "Residential – Villa",
+    id: "villaKhezershahr",
+    titleKey: "project.villaKhezershahr.titleProject",
+    subtitleKey: "project.villaKhezershahr.subtitle",
     location: "Khezershahr, Mazandaran",
     landArea: "280 sqm",
     builtArea: "450 sqm",
     designTeam: { architect: "Ghazaleh Ataei" },
     year: { design: "2025", completion: "2026" },
-    text: "project.villaKhezershahr.text",
-    images: [
+    textKey: "project.villaKhezershahr.text",
+        images: [
       "/projects/third/3-asli.jpg",
       "/projects/third/3.jpg",
       "/projects/third/33.jpg",
@@ -18,15 +20,15 @@ export const slides = [
     ],
   },
   {
-    id: 2,
-    titleProject: "Zeytoon Residential Complex, Shiraz",
-    subtitle: "Residential – Apartment",
-    location: "Zeytoon Blvd., Alley 7, Shiraz",
-    landArea: "1200 sqm",
-    builtArea: "3500 sqm",
+    id: "Bedroom design",
+    titleKey: "project.apartmentInterior.titleProject",
+    subtitleKey: "project.apartmentInterior.subtitle",
+    location: "Babol, Mazandaran",
+    landArea: "220 sqm",
+    builtArea: "400 sqm",
     designTeam: { architect: "Ghazaleh Ataei" },
-    year: { design: "2024", completion: "2026" },
-    text: "projects.zeytoonResidential.text",
+    year: { design: "2024", completion: "2025" },
+    textKey: "project.apartmentInterior.text",
     images: [
       "/projects/second/2.jpg",
       "/projects/second/22.jpg",
@@ -36,15 +38,15 @@ export const slides = [
     ],
   },
   {
-    id: 3,
-    title: "Duplex Apartment, Elahieh",
-    subtitle: "Residential – Renovation",
+    id: "Living Roome Design",
+    titleKey: "project.duplexElahieh.titleProject",
+    subtitleKey: "project.duplexElahieh.subtitle",
     location: "Elahieh St., No. 34, Tehran",
     landArea: "200 sqm",
     builtArea: "340 sqm",
     designTeam: { architect: "Ghazaleh Ataei" },
     year: { design: "2025", completion: "2025" },
-    text: "projects.duplexElahieh.text",
+    textKey: "project.duplexElahieh.text",
     images: [
       "/projects/first/0-double living room.jpg",
       "/projects/first/0-living room 01.jpg",
