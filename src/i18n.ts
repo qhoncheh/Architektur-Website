@@ -48,6 +48,11 @@ project: {
     subtitle: "Apartment",
     text: "This living room design emphasizes openness, natural light, and refined materials. The interior balances functionality with elegance, creating a warm and welcoming environment for everyday living.",
   },
+  duplexKela: {
+    titleProject: "Facade and Interior Design",
+    subtitle: "Modern Villa",
+    text: "This villa features a striking facade and thoughtfully designed interior spaces that blend seamlessly with the surrounding landscape. The design emphasizes natural materials and open layouts to create a harmonious living environment.",
+  },
 },
       },
     },
@@ -97,6 +102,12 @@ project: {
     titleProject: "Wohnzimmergestaltung",
     subtitle: "Wohnung",
     text: "Dieses Wohnzimmerdesign legt den Schwerpunkt auf Offenheit, natürliches Licht und hochwertige Materialien. Der Innenraum verbindet Funktionalität mit Eleganz und schafft eine warme und einladende Wohnatmosphäre.",
+  },
+
+  duplexKela: {
+    titleProject: "Facade and Interior Design",
+    subtitle: "Villa",
+    text:"Eine zeitgenössische zweistöckige Villa, die mit einem  Architekturansatz entworfen wurde. Das Projekt legt Wert auf klare geometrische Formen, natürliche Steinoberflächen und ausgewogene Beleuchtung, um eine nahtlose Verbindung zwischen Innen- und Außenbereichen zu schaffen."
   },
 },
       },

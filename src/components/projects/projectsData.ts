@@ -53,4 +53,22 @@ export const slides = [
       "/projects/first/0-Tv wall.jpg",
     ],
   },
+  {
+    id: "Facade and in a modern villa",
+    titleKey: "project.duplexKela.titleProject",
+    subtitleKey: "project.duplexKela.subtitle",
+    location: "KelaAbad , Mazandaran",
+    landArea: "90 sqm",
+    builtArea: "180 sqm",
+    designTeam: { architect: "Ghazaleh Ataei" },
+    year: { design: "2025", completion: "2025" },
+    textKey: "project.duplexKela.text",
+    images: [
+      "/projects/four/01.png",
+      "/projects/four/02.png",
+      "/projects/four/سردرکلارا (1).jpg",
+      "/projects/four/سردرکلارا (3).jpg",
+      "/projects/four/سردرکلارا (4).jpg",
+    ],
+  },
 ];
