@@ -4,7 +4,7 @@ import {
   FolderOpenOutlined,
   MailOutlined,
 } from "@ant-design/icons";
-import { NavLink, useLocation } from "react-router";
+import {  NavLink, useLocation } from "react-router";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "../language/language";
 
@@ -99,7 +99,20 @@ const SidebarContent = ({ collapsed = false }: Props) => {
               lineHeight: 1.8,
             }}
           >
-            <div>{t("Design")}</div>
+            <div>
+              {t("Design")}{" "}
+              <a
+                href="https://ghoncheataei-portfolio.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "#ddd2d3",
+                  textDecoration: "none",
+                }}
+              >
+                Ghoncheh Ataei
+              </a>
+            </div>
             <div>{t("footer")}</div>
           </div>
 
