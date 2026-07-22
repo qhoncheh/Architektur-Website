@@ -1,5 +1,3 @@
-
-
 export const slides = [
   {
     id: "villaKhezershahr",
