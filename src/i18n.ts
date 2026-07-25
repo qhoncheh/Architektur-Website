@@ -66,7 +66,7 @@ project: {
           downloadCV: "Lebenslauf herunterladen",
         },
 
-        Design: "Entworfen & Entwickelt von Ghoncheh Ataei",
+        Design: "Entworfen & Entwickelt von",
         footer: "© 2026 Alle Rechte vorbehalten",
         ContactMe: "Kontaktieren Sie mich",
         AboutMe: "Über mich",
@@ -107,7 +107,7 @@ project: {
   duplexKela: {
     titleProject: "Facade and Interior Design",
     subtitle: "Villa",
-    text:"Eine zeitgenössische zweistöckige Villa, die mit einem  Architekturansatz entworfen wurde. Das Projekt legt Wert auf klare geometrische Formen, natürliche Steinoberflächen und ausgewogene Beleuchtung, um eine nahtlose Verbindung zwischen Innen- und Außenbereichen zu schaffen."
+    text:"Eine zeitgenössische zweistöckige Villa, die mit einem  Architekturansatz entworfen wurde. Das Projekt legt Wert auf klare geometrische Formen, natürliche Steinoberflächen und ausgewogene Beleuchtung, um eine nahtlose Verbindung zwischen Innen zu schaffen."
   },
 },
       },
