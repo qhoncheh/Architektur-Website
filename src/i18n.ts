@@ -30,30 +30,30 @@ i18n.use(initReactI18next).init({
           Completion: "Completion",
           DesignBy: "Design",
           Architect: "Architect",
-project: {
-  villaKhezershahr: {
-    titleProject: "Villa Khezershahr",
-    subtitle: "Residential – Villa",
-    text: "This contemporary villa embodies modern architectural principles through clean lines, open-plan living areas, and expansive glazing.  ",
-  },
+    project: {
+      villaKhezershahr: {
+        titleProject: "Villa Khezershahr",
+        subtitle: "Residential – Villa",
+        text: "This contemporary villa embodies modern architectural principles through clean lines, open-plan living areas, and expansive glazing.  ",
+      },
 
-  apartmentInterior: {
-    titleProject: "Bedroom Design",
-    subtitle: "Apartment",
-    text: "This interior renovation focuses on creating warm and functional living spaces, combining contemporary aesthetics with practical solutions. Natural materials, soft lighting, and carefully selected furnishings create a comfortable and elegant atmosphere.",
-  },
+      apartmentInterior: {
+        titleProject: "Bedroom Design",
+        subtitle: "Apartment",
+        text: "This interior renovation focuses on creating warm and functional living spaces, combining contemporary aesthetics with practical solutions. Natural materials, soft lighting, and carefully selected furnishings create a comfortable and elegant atmosphere.",
+      },
 
-  duplexElahieh: {
-    titleProject: "Living Room",
-    subtitle: "Apartment",
-    text: "This living room design emphasizes openness, natural light, and refined materials. The interior balances functionality with elegance, creating a warm and welcoming environment for everyday living.",
-  },
-  duplexKela: {
-    titleProject: "Facade and Interior Design",
-    subtitle: "Modern Villa",
-    text: "This villa features a striking facade and thoughtfully designed interior spaces that blend seamlessly with the surrounding landscape. The design emphasizes natural materials and open layouts to create a harmonious living environment.",
-  },
-},
+      duplexElahieh: {
+        titleProject: "Living Room",
+        subtitle: "Apartment",
+        text: "This living room design emphasizes openness, natural light, and refined materials. The interior balances functionality with elegance, creating a warm and welcoming environment for everyday living.",
+      },
+      duplexKela: {
+        titleProject: "Facade and Interior Design",
+        subtitle: "Modern Villa",
+        text: "This villa features a striking facade and thoughtfully designed interior spaces that blend seamlessly with the surrounding landscape. The design emphasizes natural materials and open layouts to create a harmonious living environment.",
+      },
+    },
       },
     },
 
@@ -73,7 +73,6 @@ project: {
         Previous: "Zurück",
         Next: "Weiter",
 
-
         AboutMeText: `Architektur ist für mich weit mehr als das Entwerfen eines Gebäudes – sie ist ein Prozess der Gestaltung von Räumen, die die Lebensqualität der Menschen verbessern.
       In jedem Projekt strebe ich danach, ein ausgewogenes Gleichgewicht zwischen den Anforderungen des Auftraggebers, den Besonderheiten des Standorts und den ästhetischen Prinzipien der Architektur zu schaffen.
       Mit einem flexiblen Gestaltungsansatz und Erfahrung in unterschiedlichen Architekturstilen ist es mein Ziel, Entwürfe zu entwickeln, die nicht nur eine überzeugende visuelle Identität besitzen, sondern auch funktional durchdacht sind und den realen Anforderungen der Ausführung gerecht werden.
@@ -85,31 +84,31 @@ project: {
         DesignBy: "Entwurf",
         Completion: "Fertigstellung",
         Architect: "Architekt",
-project: {
-  villaKhezershahr: {
-    titleProject: "Villa Khezershahr",
-    subtitle: "Wohnhaus – Villa",
-    text: "Diese zeitgenössische Villa verkörpert moderne architektonische Prinzipien durch klare Linien, offen gestaltete Wohnbereiche und großzügige Verglasungen.  ",
-  },
+    project: {
+      villaKhezershahr: {
+        titleProject: "Villa Khezershahr",
+        subtitle: "Wohnhaus – Villa",
+        text: "Diese zeitgenössische Villa verkörpert moderne architektonische Prinzipien durch klare Linien, offen gestaltete Wohnbereiche und großzügige Verglasungen.  ",
+      },
 
-  apartmentInterior: {
-    titleProject: "Schlafzimmergestaltung",
-    subtitle: "Wohnung",
-    text: "Diese Innenraumgestaltung konzentriert sich auf die Schaffung warmer und funktionaler Wohnräume. Natürliche Materialien, sanfte Beleuchtung und sorgfältig ausgewählte Möbel schaffen eine komfortable und elegante Atmosphäre.",
-  },
+      apartmentInterior: {
+        titleProject: "Schlafzimmergestaltung",
+        subtitle: "Wohnung",
+        text: "Diese Innenraumgestaltung konzentriert sich auf die Schaffung warmer und funktionaler Wohnräume. Natürliche Materialien, sanfte Beleuchtung und sorgfältig ausgewählte Möbel schaffen eine komfortable und elegante Atmosphäre.",
+      },
 
-  duplexElahieh: {
-    titleProject: "Wohnzimmergestaltung",
-    subtitle: "Wohnung",
-    text: "Dieses Wohnzimmerdesign legt den Schwerpunkt auf Offenheit, natürliches Licht und hochwertige Materialien. Der Innenraum verbindet Funktionalität mit Eleganz und schafft eine warme und einladende Wohnatmosphäre.",
-  },
+      duplexElahieh: {
+        titleProject: "Wohnzimmergestaltung",
+        subtitle: "Wohnung",
+        text: "Dieses Wohnzimmerdesign legt den Schwerpunkt auf Offenheit, natürliches Licht und hochwertige Materialien. Der Innenraum verbindet Funktionalität mit Eleganz und schafft eine warme und einladende Wohnatmosphäre.",
+      },
 
-  duplexKela: {
-    titleProject: "Facade and Interior Design",
-    subtitle: "Villa",
-    text:"Eine zeitgenössische zweistöckige Villa, die mit einem  Architekturansatz entworfen wurde. Das Projekt legt Wert auf klare geometrische Formen, natürliche Steinoberflächen und ausgewogene Beleuchtung, um eine nahtlose Verbindung zwischen Innen zu schaffen."
-  },
-},
+      duplexKela: {
+        titleProject: "Facade and Interior Design",
+        subtitle: "Villa",
+        text:"Eine zeitgenössische zweistöckige Villa, die mit einem  Architekturansatz entworfen wurde. Das Projekt legt Wert auf klare geometrische Formen, natürliche Steinoberflächen und ausgewogene Beleuchtung, um eine nahtlose Verbindung zwischen Innen zu schaffen."
+      },
+    },
       },
     },
   },
