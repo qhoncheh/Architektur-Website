@@ -4,7 +4,7 @@ import {
   FolderOpenOutlined,
   MailOutlined,
 } from "@ant-design/icons";
-import {  NavLink, useLocation } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "../language/language";
 
@@ -108,6 +108,7 @@ const SidebarContent = ({ collapsed = false }: Props) => {
                 style={{
                   color: "#ddd2d3",
                   textDecoration: "none",
+                  fontWeight: "bold",
                 }}
               >
                 Ghoncheh Ataei
