@@ -23,7 +23,7 @@ const ProjectGallery = ({ images }: ProjectGalleryProps) => {
       }}
     >
       <Image.PreviewGroup items={images}>
-        <div className="mb-4 h-[410px] overflow-hidden rounded-lg">
+        <div className="mb-4  overflow-hidden rounded-lg">
           <Image
             src={images[activeIndex]}
             preview={{ mask: null }}
