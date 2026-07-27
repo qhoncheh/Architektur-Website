@@ -17,7 +17,7 @@ const Project = () => {
   };
 
   return (
-    <div className="w-full p-8">
+    <div className="p-8">
       <Row gutter={[24, 24]}>
         <Col xs={24} lg={10}>
           <ProjectInfo project={slide} />
