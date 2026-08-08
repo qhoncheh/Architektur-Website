@@ -7,12 +7,12 @@ i18n.use(initReactI18next).init({
       translation: {
         menu: {
           projects: "Projects",
-          about: "About",
-          contact: "Contact",
-          downloadCV: "Download CV",
+          about:"About",
+          contact:"Contact",
+          downloadCV:"Download CV",
         },
-        Design: "Designed & Developed by",
-        footer: "© 2026 All Rights Reserved",
+        Design:"Designed & Developed by",
+        footer:"© 2026 All Rights Reserved",
         ContactMe: "Contact Me",
         AboutMe: "About Me",
         Previous: "Previous",
