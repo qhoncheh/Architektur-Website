@@ -11,7 +11,7 @@ i18n.use(initReactI18next).init({
           contact: "Contact",
           downloadCV: "Download CV",
         },
-        Design: "Designed & Developed by ",
+        Design: "Designed & Developed by",
         footer: "© 2026 All Rights Reserved",
         ContactMe: "Contact Me",
         AboutMe: "About Me",
