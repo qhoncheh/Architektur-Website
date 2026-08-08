@@ -6,7 +6,7 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         menu: {
-          projects: "Projects",
+          projects: "Projects", 
           about:"About",
           contact:"Contact",
           downloadCV:"Download CV",
