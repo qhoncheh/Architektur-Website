@@ -23,7 +23,7 @@ i18n.use(initReactI18next).init({
         I view each project as an opportunity to create sustainable, characterful, and user-oriented spaces through creative and precise planning.`,
         Location: "Location",
           LandArea: "Land Area",
-          BuiltArea: "Built Area",
+          BuiltArea: "Built Area", 
           Year: "Year",
           Completion: "Completion",
           DesignBy: "Design",
