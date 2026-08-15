@@ -11,7 +11,7 @@ const Contact = lazy(() => import("./pages/contact/contact"));
 
 function App() {
   return (
-    <div
+    <div 
       className="min-h-screen flex"
       style={{
         backgroundImage: "linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), url('/10.jpg')",
