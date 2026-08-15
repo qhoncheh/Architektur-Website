@@ -22,7 +22,7 @@ function App() {
     >
       <div className="flex w-full">
         <Sidebar />
-        <div className="flex justify-center items-center w-full text-gray-300 text-base">
+        <div className="flex justify-center items-center w-full text-gray-300 text-base ">
           <Suspense fallback={<Loading />}>
             <Routes>
               <Route path="/" element={<Project />} />
