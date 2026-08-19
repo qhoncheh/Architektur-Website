@@ -1,5 +1,5 @@
-import { Typography } from 'antd';
-import { useTranslation } from 'react-i18next';
+import { Typography } from "antd";
+import { useTranslation } from "react-i18next";
 
 const { Title, Paragraph } = Typography;
 
@@ -7,37 +7,15 @@ const AboutText = () => {
   const { t } = useTranslation();
 
   return (
-    <div
-      style={{
-        textAlign: 'center',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        height: '100%',
-      }}
-    >
+    <div className="flex h-full flex-col justify-center text-center">
       <Title
         level={3}
-        style={{
-          marginBottom: '16px',
-          fontSize: '1.5rem',
-          color: '#FFFFFF',
-          fontWeight: 300,
-        }}
+        className="mb-4! text-2xl! font-light! text-white!"
       >
         {t("AboutMe")}
       </Title>
 
-      <Paragraph
-        style={{
-          fontSize: '1rem',
-          color: '#9CA3AF',
-          lineHeight: '1.75',
-          textAlign: 'justify',
-          whiteSpace: 'pre-line',
-          marginBottom: 0,
-        }}
-      >
+      <Paragraph className="mb-0! whitespace-pre-line text-justify text-base! leading-7! text-[#9CA3AF]!">
         {t("AboutMeText")}
       </Paragraph>
     </div>
