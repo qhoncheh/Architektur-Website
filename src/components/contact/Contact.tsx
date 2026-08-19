@@ -1,14 +1,7 @@
 import { Typography } from "antd";
-import type { ComponentType } from "react";
+import type { ContactItemProps } from "../../types/type";
 
 const { Text, Link } = Typography;
-
-type ContactItemProps = {
-  icon: ComponentType<{ style?: React.CSSProperties }>;
-  href: string;
-  value: string;
-  textStyle?: React.CSSProperties;
-};
 
 const ContactItem = ({ icon: Icon, href, value, textStyle }: ContactItemProps) => {
   return (

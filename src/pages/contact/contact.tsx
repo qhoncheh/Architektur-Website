@@ -3,8 +3,8 @@ import { Layout, Row, Col, Typography } from "antd";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
-import { contactData } from "../../components/contact/contactData";
-import ContactItem from "../../components/contact/ContactItem";
+import { contactData } from "../../components/contact/data";
+import ContactItem from "../../components/contact/Contact";
 
 const { Content } = Layout;
 const { Title } = Typography;
