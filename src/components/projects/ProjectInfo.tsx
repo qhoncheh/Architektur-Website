@@ -6,6 +6,7 @@ import {
   TeamOutlined,
 } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
+import type { InfoItem } from "../../types/type";
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -33,66 +34,59 @@ type Props = {
 
 const ProjectInfo = ({ project }: Props) => {
   const { t } = useTranslation();
+  const infoItems: InfoItem[] = [
+    {
+      key: "location",
+      icon: <EnvironmentOutlined />,
+      label: t("Location"),
+      value: project.location,
+    },
+    {
+      key: "landArea",
+      icon: <HomeOutlined />,
+      label: t("LandArea"),
+      value: project.landArea,
+    },
+    {
+      key: "builtArea",
+      icon: <HomeOutlined />,
+      label: t("BuiltArea"),
+      value: project.builtArea,
+    },
+    {
+      key: "year",
+      icon: <FieldTimeOutlined />,
+      label: t("Year"),
+      value: (
+        <>
+          {t("DesignBy")} {project.year.design} - {t("Completion")}{" "}
+          {project.year.completion}
+        </>
+      ),
+    },
+    {
+      key: "architect",
+      icon: <TeamOutlined />,
+      label: t("Architect"),
+      value: project.designTeam.architect,
+    },
+  ];
 
   return (
-    <Card bordered={false} className="h-full !bg-transparent shadow-none">
+    <Card bordered={false} className="h-full bg-transparent! shadow-none">
       <div className="mb-14 text-center">
-        <Title level={4} style={{ color: "#fff", fontWeight: "normal" }}>
-          {t(project.titleKey)}
-        </Title>
-
-        <Text style={{ color: "#9ca3af" }}>
-          {t(project.subtitleKey)}
-        </Text>
+        <Title level={4} className="font-normal! text-white!"> {t(project.titleKey)} </Title>
+        <Text className="text-[#9ca3af]!"> {t(project.subtitleKey)} </Text>
       </div>
-
       <Space direction="vertical" size="middle">
-        <div>
-          <Text style={{ color: "#6d83cc" }}>
-            <EnvironmentOutlined /> {t("Location")} :
-          </Text>
-          <Text style={{ color: "#fff" }}> {project.location}</Text>
-        </div>
-
-        <div>
-          <Text style={{ color: "#6d83cc" }}>
-            <HomeOutlined /> {t("LandArea")} :
-          </Text>
-          <Text style={{ color: "#fff" }}> {project.landArea}</Text>
-        </div>
-
-        <div>
-          <Text style={{ color: "#6d83cc" }}>
-            <HomeOutlined /> {t("BuiltArea")} :
-          </Text>
-          <Text style={{ color: "#fff" }}> {project.builtArea}</Text>
-        </div>
-
-        <div>
-          <Text style={{ color: "#6d83cc" }}>
-            <FieldTimeOutlined /> {t("Year")} :
-          </Text>
-          <Text style={{ color: "#fff" }}>
-            {t("DesignBy")} {project.year.design} - {t("Completion")}{" "}
-            {project.year.completion}
-          </Text>
-        </div>
-
-        <div>
-          <Text style={{ color: "#6d83cc" }}>
-            <TeamOutlined /> {t("Architect")} :
-          </Text>
-          <Text style={{ color: "#fff" }}>
-            {project.designTeam.architect}
-          </Text>
-        </div>
+        {infoItems.map(({ key, icon, label, value }) => (
+          <div key={key}> <Text className="text-[#6d83cc]!"> {icon} {label} : </Text>
+            <Text className="text-white!"> {value}</Text>
+          </div>
+        ))}
       </Space>
-
-      <Divider style={{ borderColor: "#474141", margin: "24px 0" }} />
-
-      <Paragraph className="mt-8" style={{ color: "#cac3c3" }}>
-        {t(project.textKey)}
-      </Paragraph>
+      <Divider className="my-6! border-[#474141]!" />
+      <Paragraph className="mt-8 text-[#cac3c3]!"> {t(project.textKey)} </Paragraph>
     </Card>
   );
 };

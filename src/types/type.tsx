@@ -1,4 +1,4 @@
-import type { ComponentType } from "react";
+import type { ComponentType, ReactNode } from "react";
 
 export type ContactItemProps = {
   icon: ComponentType<{ style?: React.CSSProperties }>;
@@ -10,3 +10,10 @@ export type ContactItemProps = {
 export interface ProjectGalleryProps {
   images: string[];
 }
+
+export type InfoItem = {
+  key: string;
+  icon: ReactNode;
+  label: string;
+  value: ReactNode;
+};
