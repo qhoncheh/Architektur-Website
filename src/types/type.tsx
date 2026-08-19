@@ -6,3 +6,7 @@ export type ContactItemProps = {
   value: string;
   textStyle?: React.CSSProperties;
 };
+
+export interface ProjectGalleryProps {
+  images: string[];
+}

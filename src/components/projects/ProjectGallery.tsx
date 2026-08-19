@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { Card, Row, Col, Image } from "antd";
-
-interface ProjectGalleryProps {
-  images: string[];
-}
+import type { ProjectGalleryProps } from "../../types/type";
 
 const ProjectGallery = ({ images }: ProjectGalleryProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
