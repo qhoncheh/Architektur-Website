@@ -8,24 +8,15 @@ const ProjectGallery = ({ images }: ProjectGalleryProps) => {
   return (
     <Card
       bordered={false}
-      style={{
-        background: "transparent",
-        boxShadow: "none",
-      }}
-      styles={{
-        body: {
-          background: "transparent",
-          padding: 0,
-        },
-      }}
+      style={{ background: "transparent", boxShadow: "none",}}
+      styles={{ body: { background: "transparent", padding: 0,},}}
     >
       <Image.PreviewGroup items={images}>
         <div className="mb-4  overflow-hidden rounded-lg">
           <Image
             src={images[activeIndex]}
             preview={{ mask: null }}
-            className="w-full h-full object-cover"
-          />
+            className="w-full h-full object-cover"/>
         </div>
       </Image.PreviewGroup>
 
@@ -37,13 +28,11 @@ const ProjectGallery = ({ images }: ProjectGalleryProps) => {
             <Col key={`${img}-${index}`} xs={12} sm={8} md={6}>
               <div
                 className="h-24 overflow-hidden rounded-lg cursor-pointer"
-                onClick={() => setActiveIndex(index)}
-              >
+                onClick={() => setActiveIndex(index)}>
                 <Image
                   src={img}
                   preview={false}
-                  className="w-full h-full object-cover"
-                />
+                  className="w-full h-full object-cover" />
               </div>
             </Col>
           );
