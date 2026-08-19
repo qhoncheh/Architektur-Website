@@ -22,12 +22,10 @@ const Project = () => {
         <Col xs={24} lg={10}>
           <ProjectInfo project={slide} />
         </Col>
-
         <Col xs={24} lg={14}>
           <ProjectGallery images={slide.images} />
         </Col>
       </Row>
-
       <ProjectNavigation onPrev={handlePrev} onNext={handleNext} />
     </div>
   );

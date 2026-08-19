@@ -10,11 +10,9 @@ const AboutText = () => {
     <div className="flex h-full flex-col justify-center text-center">
       <Title
         level={3}
-        className="mb-4! text-2xl! font-light! text-white!"
-      >
+        className="mb-4! text-2xl! font-light! text-white!">
         {t("AboutMe")}
       </Title>
-
       <Paragraph className="mb-0! whitespace-pre-line text-justify text-base! leading-7! text-[#9CA3AF]!">
         {t("AboutMeText")}
       </Paragraph>

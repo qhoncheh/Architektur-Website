@@ -11,31 +11,20 @@ const ProjectNavigation = ({ onPrev, onNext }: Props) => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex justify-between mt-6">
+    <div className="mt-6 flex justify-between">
       <Button
         type="text"
-        icon={<LeftOutlined style={{ color: "#fff" }} />}
+        icon={<LeftOutlined className="text-white!" />}
         onClick={onPrev}
-        style={{
-          color: "#fff",
-          border: "1px solid gray",
-          borderRadius: "50px",
-        }}
-      >
+        className="rounded-[50px]! border border-gray! text-white!" >
         {t("Previous")}
       </Button>
-
       <Button
         type="text"
-        icon={<RightOutlined style={{ color: "#fff" }} />}
+        icon={<RightOutlined className="text-white!" />}
         iconPosition="end"
         onClick={onNext}
-        style={{
-          color: "#fff",
-          border: "1px solid gray",
-          borderRadius: "50px",
-        }}
-      >
+        className="rounded-[50px]! border border-gray! text-white!" >
         {t("Next")}
       </Button>
     </div>
