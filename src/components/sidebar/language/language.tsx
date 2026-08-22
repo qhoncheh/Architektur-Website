@@ -3,7 +3,6 @@ import i18n from "../../../i18n";
 
 const LanguageToggle = () => {
   const [lang, setLang] = useState(i18n.language || "en");
-
   const toggleLanguage = () => {
     const newLang = lang === "en" ? "de" : "en";
     setLang(newLang);
