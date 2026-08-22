@@ -26,7 +26,6 @@ const About = () => {
           <Col xs={24} sm={24} md={24} lg={12}>
             <AboutText />
           </Col>
-
           <Col xs={24} sm={24} md={24} lg={12}>
             <AboutImage />
           </Col>

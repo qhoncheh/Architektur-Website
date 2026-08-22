@@ -31,7 +31,7 @@ i18n.use(initReactI18next).init({
         project: {
           villaKhezershahr: {
             titleProject: "Villa Khezershahr",
-            subtitle: "Residential – Villa",
+            subtitle: "Residential – Villa", 
             text: "This contemporary villa embodies modern architectural principles through clean lines, open-plan living areas, and expansive glazing.  ",
           },
           apartmentInterior: {

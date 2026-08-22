@@ -32,28 +32,12 @@ const Contact = () => {
       <Content style={{ padding: "50px", paddingTop: "100px" }}>
         <Row gutter={[24, 24]} align="middle" data-aos="fade-up">
           <Col xs={24} sm={24} md={24} lg={12}>
-            <div
-              style={{
-                textAlign: "center",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                height: "100%",
-                gap: "20px",
-              }}
-            >
+            <div style={{textAlign: "center", display: "flex" , flexDirection: "column", justifyContent: "center", height: "100%",gap: "20px",}} >
               <Title
                 level={3}
-                style={{
-                  marginBottom: "30px",
-                  fontSize: "1.5rem",
-                  color: "#FFFFFF",
-                  fontWeight: 300,
-                }}
-              >
+                style={{ marginBottom: "30px", fontSize: "1.5rem",color: "#FFFFFF",fontWeight: 300,}} >
                 {t("ContactMe")}
               </Title>
-
               {contactData.map((item, index) => (
                 <ContactItem key={index} {...item} textStyle={textStyle} />
               ))}
@@ -61,23 +45,11 @@ const Contact = () => {
           </Col>
 
           <Col xs={24} sm={24} md={24} lg={12}>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                height: "100%",
-              }}
-            >
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%",}} >
               <img
                 src={photoUrl}
                 alt="Contact"
-                style={{
-                  width: "90%",
-                  height: "400px",
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                }}
+                style={{width: "90%", height: "400px",objectFit: "cover", borderRadius: "8px",}}
               />
             </div>
           </Col>
