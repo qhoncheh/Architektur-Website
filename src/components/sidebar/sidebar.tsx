@@ -62,11 +62,7 @@ const Sidebar = () => {
   }
 
   return (
-    <Sider
-      width={300}
-      collapsed={collapsed}
-      collapsedWidth={90}
-      trigger={null}
+    <Sider width={300} collapsed={collapsed} collapsedWidth={90} trigger={null}
       style={{
         minHeight: "100vh",
         position: "relative",
@@ -75,29 +71,10 @@ const Sidebar = () => {
         ...glassStyle,
       }}
     >
-      <Button
-        type="text"
-        icon={
-          collapsed ? (
-            <MenuUnfoldOutlined />
-          ) : (
-            <MenuFoldOutlined />
-          )
-        }
+      <Button type="text"
+        icon={ collapsed ? (<MenuUnfoldOutlined />) : (<MenuFoldOutlined />) }
         onClick={() => setCollapsed((prev) => !prev)}
-        style={{
-          position: "absolute",
-          top: 16,
-          right: 26,
-          zIndex: 100,
-          color: "#fff",
-          width: 42,
-          height: 42,
-          borderRadius: "12px",
-          background: "rgba(255,255,255,.08)",
-          border: "1px solid rgba(255,255,255,.08)",
-          backdropFilter: "blur(20px)",
-        }}
+        style={{ position: "absolute", top: 16, right: 26, zIndex: 100, color: "#fff", width: 42, height: 42, borderRadius: "12px", background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.08)", backdropFilter: "blur(20px)", }}
       />
 
       <SidebarContent collapsed={collapsed} />
