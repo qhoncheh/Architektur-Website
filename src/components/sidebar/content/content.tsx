@@ -1,9 +1,5 @@
 import { Menu, Button } from "antd";
-import {
-  UserOutlined,
-  FolderOpenOutlined,
-  MailOutlined,
-} from "@ant-design/icons";
+import { UserOutlined,FolderOpenOutlined, MailOutlined,} from "@ant-design/icons";
 import { NavLink, useLocation } from "react-router";
 import { useTranslation } from "react-i18next";
 import LanguageToggle from "../language/language";
@@ -15,7 +11,6 @@ type Props = {
 const SidebarContent = ({ collapsed = false }: Props) => {
   const location = useLocation();
   const { t } = useTranslation();
-
   const menuItems = [
     {
       key: "/",
@@ -48,27 +43,15 @@ const SidebarContent = ({ collapsed = false }: Props) => {
 
   return (
     <div
-    className={` h-full flex flex-col justify-between ${collapsed ? 'pt-[70px] px-[10px] pb-5' : 'pt-[70px] px-5 pb-8'} bg-gray-900`}>
-      <Menu
-        theme="dark"
-        mode="inline"
-        inlineCollapsed={collapsed}
-        selectedKeys={[location.pathname]}
-        items={menuItems}
-        style={{ border: "none", background: "transparent", }} />
-
+    className={` h-full flex flex-col justify-between ${collapsed ? 'pt-17.5 px-2.5 pb-5' : 'pt-17.5 px-5 pb-8'} bg-gray-900`}>
+      <Menu theme="dark" mode="inline" inlineCollapsed={collapsed} selectedKeys={[location.pathname]} items={menuItems}style={{ border: "none", background: "transparent", }} />
       {!collapsed && (
-        <div
-          style={{ display: "flex", flexDirection: "column", gap: 20,  }} >
-          <Button
-            size="large"
-            block
+        <div style={{ display: "flex", flexDirection: "column", gap: 20,  }} >
+          <Button size="large" block
             style={{ borderRadius: "999px", background: "#232d42", borderColor: "#232d42", color: "#fff", height: 50, }}>
             {t("menu.downloadCV")}
           </Button>
-
-          <div
-            style={{ color: "#9ca3af",  fontSize: 13, textAlign: "center",  lineHeight: 1.8,}}>
+          <div style={{ color: "#9ca3af",  fontSize: 13, textAlign: "center",  lineHeight: 1.8,}}>
             <div>
               {t("Design")}{" "}
               <a
