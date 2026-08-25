@@ -48,7 +48,7 @@ const SidebarContent = ({ collapsed = false }: Props) => {
 
   return (
     <div
-      style={{ height: "100%",  display: "flex", flexDirection: "column", justifyContent: "space-between", padding: collapsed ? "70px 10px 20px" : "70px 20px 32px",background: "#111827", }} >
+    className={` h-full flex flex-col justify-between ${collapsed ? 'pt-[70px] px-[10px] pb-5' : 'pt-[70px] px-5 pb-8'} bg-gray-900`}>
       <Menu
         theme="dark"
         mode="inline"

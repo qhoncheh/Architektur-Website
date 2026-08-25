@@ -13,7 +13,7 @@ const LanguageToggle = () => {
     <div
       onClick={toggleLanguage}
       style={{
-        position: "absolute",
+        position:"absolute",
         bottom: "230px",
         left: "2px",
         cursor: "pointer",
