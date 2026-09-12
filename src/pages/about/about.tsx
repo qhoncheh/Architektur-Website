@@ -9,11 +9,7 @@ const { Content } = Layout;
 
 const About = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      easing: "ease-out-cubic",
-      once: true,
-    });
+    AOS.init({ duration: 1200,  easing: "ease-out-cubic",  once: true });
   }, []);
   return (
     <Layout className="site-layout" style={{ minHeight: "100vh", backgroundColor: "transparent"}}>
