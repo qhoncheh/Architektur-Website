@@ -15,12 +15,8 @@ const About = () => {
     <Layout className="site-layout" style={{ minHeight: "100vh", backgroundColor: "transparent"}}>
       <Content style={{ padding: "50px", paddingTop: "100px"}}>
         <Row gutter={[24, 24]} align="middle">
-          <Col xs={24} sm={24} md={24} lg={12}>
-            <AboutText />
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={12}>
-            <AboutImage />
-          </Col>
+          <Col xs={24} sm={24} md={24} lg={12}> <AboutText /> </Col>
+          <Col xs={24} sm={24} md={24} lg={12}> <AboutImage /></Col>
         </Row>
       </Content>
     </Layout>
