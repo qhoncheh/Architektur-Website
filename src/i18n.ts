@@ -49,6 +49,11 @@ i18n.use(initReactI18next).init({
             subtitle: "Modern Villa",
             text: "This villa features a striking facade and thoughtfully designed interior spaces that blend seamlessly with the surrounding landscape. The design emphasizes natural materials and open layouts to create a harmonious living environment.",
           },
+          fifthProject: {
+            titleProject: "Modern Residence",
+            subtitle: "Residential",
+            text: "A contemporary residence designed with clean geometric forms, natural stone surfaces, and balanced lighting to create a seamless connection between interior spaces and the surrounding landscape.",
+          },
         },
       },
     },
@@ -98,6 +103,11 @@ i18n.use(initReactI18next).init({
           titleProject: "Facade and Interior Design",
           subtitle: "Villa",
           text:"Eine zeitgenössische zweistöckige Villa, die mit einem  Architekturansatz entworfen wurde. Das Projekt legt Wert auf klare geometrische Formen, natürliche Steinoberflächen und ausgewogene Beleuchtung, um eine nahtlose Verbindung zwischen Innen zu schaffen."
+        },
+        fifthProject: {
+          titleProject: "Modern Residence",
+          subtitle: "Wohnhaus",
+          text: "Ein modernes Wohnhaus mit klaren geometrischen Formen, natürlichen Steinoberflächen und ausgewogener Beleuchtung für eine nahtlose Verbindung zwischen Innen- und Außenraum.",
         },
     },
       },

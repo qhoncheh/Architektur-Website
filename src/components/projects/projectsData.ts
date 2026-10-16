@@ -71,4 +71,21 @@ export const slides = [
       "/projects/four/سردرکلارا (4).jpg",
     ],
   },
+  {
+    id: "Modern Residence",
+    titleKey: "project.fifthProject.titleProject",
+    subtitleKey: "project.fifthProject.subtitle",
+    location: "Mazandaran , Sorkhrood",
+    landArea: "350 sqm",
+    builtArea: "520 sqm",
+    designTeam: { architect: "Ghazaleh Ataei" },
+    year: { design: "2026", completion: "2027" },
+    textKey: "project.fifthProject.text",
+    images: [
+      "/projects/five/1.png",
+      "/projects/five/2.png",
+      "/projects/five/3.png",
+      "/projects/five/4.png",
+    ],
+  },
 ];
