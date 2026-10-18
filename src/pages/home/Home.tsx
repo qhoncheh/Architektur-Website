@@ -1,12 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 import { slides } from "../../components/projects/projectsData";
+import "./Home.css";
+
+const heroVideos = ["/video/villa-hero.mp4", "/video/22.mp4"];
 
 const Arrow = () => <span aria-hidden="true" className="arrow-icon">↗</span>;
 
 const Home = () => {
   const { t } = useTranslation();
+  const [activeVideoIndex, setActiveVideoIndex] = useState(0);
+
+  const playNextHeroVideo = () => {
+    setActiveVideoIndex((currentIndex) => (currentIndex + 1) % heroVideos.length);
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -24,7 +32,18 @@ const Home = () => {
   return (
     <div className="home-page">
       <section className="hero" aria-label="Featured architecture project">
-        <div className="hero-image" />
+        <video
+          key={heroVideos[activeVideoIndex]}
+          className="hero-video"
+          src={heroVideos[activeVideoIndex]}
+          autoPlay
+          muted
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+          onEnded={playNextHeroVideo}
+          onError={playNextHeroVideo}
+        />
         <div className="hero-shade" />
         <div className="hero-topline"><span>INDEPENDENT ARCHITECTURE STUDIO</span><span>MAZANDARAN · IRAN</span></div>
         <div className="hero-copy">
@@ -34,7 +53,7 @@ const Home = () => {
           <a className="circle-link" href="#projects" aria-label="Explore selected work"><span>EXPLORE<br />THE WORK</span><Arrow /></a>
         </div>
         <div className="hero-bottomline"><span>01 — 05</span><span>RESIDENTIAL · INTERIORS · OBJECTS</span><a href="#intro">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a></div>
-        <div className="hero-index" aria-hidden="true">01</div>
+        <div className="hero-index" aria-hidden="true"> </div>
       </section>
 
       <section className="intro-section section-shell" id="intro">
