@@ -84,8 +84,10 @@ export const slides = [
     images: [
       "/projects/five/1.png",
       "/projects/five/2.png",
-      "/projects/five/3.png",
-      "/projects/five/4.png",
+      "/projects/five/02.jpeg",
+      "/projects/five/03.jpeg",
+      "/projects/five/04.jpeg",
+
     ],
   },
 ];
