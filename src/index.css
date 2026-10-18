@@ -2,64 +2,108 @@
 
 import 'aos/dist/aos.css'
 
-:root {
+@theme {
+  --color-bg: #070707;
+  --color-surface: #0f0f0f;
+  --color-border: #1a1a1a;
+  --color-text: #e7e7e7;
+  --color-text-muted: #8a8a8a;
+  --color-accent: #ffffff;
+  --color-accent-hover: #d4d4d4;
 
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
 
-  --bg: #fff;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+*,
+*::before,
+*::after {
+  border-color: var(--color-border);
+}
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+html, body, #root, #__next {
+  width: 100%;
+  overflow-x: hidden;
+}
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.reveal {
+  overflow: hidden;
+}
+
+.reveal img {
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal:hover img {
+  transform: scale(1.05);
+}
+
+.section {
+  padding: 120px 80px;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 80px 32px;
   }
 }
 
-
-
-body {
-  margin: 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
 }
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 600ms ease, transform 600ms ease;
 }
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+.page-exit {
+  opacity: 1;
+}
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 400ms ease, transform 400ms ease;
 }
