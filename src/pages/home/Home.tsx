@@ -28,8 +28,8 @@ const Home = () => {
         <div className="hero-shade" />
         <div className="hero-topline"><span>INDEPENDENT ARCHITECTURE STUDIO</span><span>MAZANDARAN · IRAN</span></div>
         <div className="hero-copy">
-          <p className="eyebrow">SPACES THAT FEEL LIKE SOMETHING</p>
-          <h1>Architecture<br />with <em>intention.</em></h1>
+          {/* <p className="eyebrow">SPACES THAT FEEL LIKE SOMETHING</p> */}
+          <h1> <br /> <em></em></h1>
           <p className="hero-description">We shape considered spaces for living, gathering and belonging.</p>
           <a className="circle-link" href="#projects" aria-label="Explore selected work"><span>EXPLORE<br />THE WORK</span><Arrow /></a>
         </div>
