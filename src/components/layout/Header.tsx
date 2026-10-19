@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
@@ -7,6 +7,27 @@ const Header = () => {
   const { t, i18n: currentI18n } = useTranslation();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const hero = document.querySelector(".hero") as HTMLElement | null;
+      const header = document.querySelector(".site-header") as HTMLElement | null;
+      if (hero) {
+        const headerBottom = header?.getBoundingClientRect().bottom ?? 106;
+        setScrolled(hero.getBoundingClientRect().bottom <= headerBottom);
+      } else {
+        setScrolled(window.scrollY > 0);
+      }
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
   const links = [
     { label: t("menu.projects"), href: "/#projects" },
     { label: t("menu.about"), href: "/about" },
@@ -14,7 +35,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="site-header">
+    <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
       <Link className="brand-mark" to="/" aria-label={t("brand.home")}>
         <span className="brand-monogram">GA</span>
         <span className="brand-name">GHAZALEH ATAEI<span>{t("brand.tagline")}</span></span>
