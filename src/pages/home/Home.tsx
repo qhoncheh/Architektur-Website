@@ -88,7 +88,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="contact-cta section-shell reveal-up"><span className="section-label">04 / HAVE A PROJECT IN MIND?</span><h2>Let’s make<br /><em>space for it.</em></h2><Link to="/contact" className="cta-link">TELL US ABOUT IT <Arrow /></Link><div className="cta-orbit" aria-hidden="true">GA</div></section>
+      {/* <section className="contact-cta section-shell reveal-up"><span className="section-label">04 / HAVE A PROJECT IN MIND?</span><h2>Let’s make<br /><em>space for it.</em></h2><Link to="/contact" className="cta-link">TELL US ABOUT IT <Arrow /></Link><div className="cta-orbit" aria-hidden="true">GA</div></section> */}
     </div>
   );
 };
