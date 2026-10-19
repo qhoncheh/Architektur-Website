@@ -1,17 +1,15 @@
 import { useEffect } from "react";
-import { Layout, Row, Col, Typography } from "antd";
+import { Row, Col } from "antd";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { contactData } from "../../components/contact/data";
 import ContactItem from "../../components/contact/Contact";
-
-const { Content } = Layout;
-const { Title } = Typography;
+import "./Contact.css";
 
 const Contact = () => {
   const photoUrl = "/113.png";
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   useEffect(() => {
     AOS.init({
@@ -21,41 +19,35 @@ const Contact = () => {
     });
   }, []);
 
-  const textStyle = {
-    color: "#9CA3AF",
-    fontSize: "18px",
-    fontWeight: 400,
-  };
-
   return (
-    <Layout style={{ minHeight: "100vh", backgroundColor: "transparent" }}>
-      <Content style={{ padding: "50px", paddingTop: "100px" }}>
-        <Row gutter={[24, 24]} align="middle" data-aos="fade-up">
-          <Col xs={24} sm={24} md={24} lg={12}>
-            <div style={{textAlign: "center", display: "flex" , flexDirection: "column", justifyContent: "center", height: "100%",gap: "20px",}} >
-              <Title
-                level={3}
-                style={{ marginBottom: "30px", fontSize: "1.5rem",color: "#FFFFFF",fontWeight: 300,}} >
-                {t("ContactMe")}
-              </Title>
-              {contactData.map((item, index) => (
-                <ContactItem key={index} {...item} textStyle={textStyle} />
-              ))}
+    <main className="contact-page">
+      <section className="contact-section">
+        <div className="contact-kicker" data-aos="fade-up">
+          <span>04 / GET IN TOUCH</span>
+          <span>HAVE A PROJECT IN MIND?</span>
+        </div>
+        <Row gutter={[64, 48]} align="middle" className="contact-grid">
+          <Col xs={24} lg={12}>
+            <div className="contact-copy" data-aos="fade-up">
+              <span className="contact-eyebrow">LET’S MAKE SPACE FOR IT</span>
+              {/* <h1>{t("ContactMe")}</h1> */}
+              <p>For new projects, collaborations, or simply to say hello, get in touch.</p>
+              <div className="contact-list">
+                {contactData.map((item) => (
+                  <ContactItem key={item.type} {...item} />
+                ))}
+              </div>
             </div>
           </Col>
-
-          <Col xs={24} sm={24} md={24} lg={12}>
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%",}} >
-              <img
-                src={photoUrl}
-                alt="Contact"
-                style={{width: "90%", height: "400px",objectFit: "cover", borderRadius: "8px",}}
-              />
-            </div>
+          <Col xs={24} lg={12}>
+            <figure className="contact-image" data-aos="fade-up" data-aos-delay="150">
+              <img src={photoUrl} alt="Architecture and interior design by Ghazaleh Ataei" />
+              <figcaption><span>MAZANDARAN · IRAN</span><span>AVAILABLE FOR SELECT PROJECTS</span></figcaption>
+            </figure>
           </Col>
         </Row>
-      </Content>
-    </Layout>
+      </section>
+    </main>
   );
 };
 

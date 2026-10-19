@@ -1,0 +1,148 @@
+.contact-page {
+  min-height: 100%;
+  background: #151512;
+  color: #f4f1e9;
+}
+
+.contact-section {
+  padding: 150px 13.3vw 110px;
+}
+
+.contact-kicker {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #aaa79e;
+  font-size: 8px;
+  letter-spacing: .2em;
+}
+
+.contact-grid {
+  margin-top: 68px;
+}
+
+.contact-copy {
+  max-width: 500px;
+}
+
+.contact-eyebrow {
+  color: #c7b8a1;
+  font-size: 9px;
+  letter-spacing: .24em;
+}
+
+.contact-copy h1 {
+  color: #f4f1e9;
+  font-size: clamp(48px, 5.5vw, 76px);
+}
+
+.contact-copy h1::after {
+  content: ".";
+  color: #c6ae8c;
+}
+
+.contact-copy > p {
+  max-width: 350px;
+  margin: 0 0 34px;
+  color: #aaa79e;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.contact-list {
+  border-top: 1px solid #37362f;
+}
+
+.contact-item {
+  display: block;
+  border-bottom: 1px solid #37362f;
+  color: #d2cec4;
+  transition: color .25s ease;
+}
+
+.contact-item > div {
+  min-height: 59px;
+  display: grid;
+  grid-template-columns: 24px 1fr 18px;
+  align-items: center;
+  gap: 13px;
+}
+
+.contact-item svg {
+  color: #c6ae8c;
+  font-size: 16px;
+}
+
+.contact-item > div > span:first-of-type {
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  letter-spacing: .04em;
+}
+
+.contact-item-arrow {
+  color: #8c8981;
+  font-size: 15px;
+  text-align: right;
+  transition: transform .25s ease;
+}
+
+.contact-item:hover {
+  color: #c6ae8c;
+}
+
+.contact-item:hover .contact-item-arrow {
+  transform: translate(3px, -3px);
+}
+
+.contact-image img {
+  height: clamp(390px, 42vw, 560px);
+}
+
+.contact-image figcaption {
+  color: #8c8981;
+}
+
+@media (max-width: 900px) {
+  .contact-section {
+    padding: 130px 8vw 90px;
+  }
+
+  .contact-grid {
+    margin-top: 54px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-section {
+    padding: 108px 8vw 70px;
+  }
+
+  .contact-kicker {
+    font-size: 7px;
+  }
+
+  .contact-kicker span:last-child {
+    max-width: 135px;
+    text-align: right;
+  }
+
+  .contact-grid {
+    margin-top: 45px;
+  }
+
+  .contact-copy h1 {
+    font-size: clamp(46px, 12vw, 64px);
+  }
+
+  .contact-copy > p {
+    font-size: 12px;
+  }
+
+  .contact-image img {
+    height: 340px;
+  }
+
+  .contact-image figcaption {
+    font-size: 7px;
+  }
+}

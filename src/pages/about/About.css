@@ -1,0 +1,154 @@
+.about-page {
+  min-height: 100%;
+  background: #151512;
+  color: #f4f1e9;
+}
+
+.about-hero {
+  padding: 150px 13.3vw 66px;
+}
+
+.about-kicker,
+.about-endnote {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  color: #aaa79e;
+  font-size: 8px;
+  letter-spacing: .2em;
+}
+
+.about-grid {
+  margin-top: 70px;
+}
+
+.about-copy {
+  max-width: 540px;
+}
+
+.about-eyebrow {
+  color: #c7b8a1;
+  font-size: 9px;
+  letter-spacing: .24em;
+}
+
+.about-copy h1,
+.contact-copy h1 {
+  margin: 24px 0 28px;
+  color: #f4f1e9;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 5.5vw, 76px);
+  font-weight: 400;
+  letter-spacing: -.06em;
+  line-height: .98;
+}
+
+.about-copy h1::after {
+  content: ".";
+  color: #c6ae8c;
+}
+
+.about-copy p {
+  margin: 0;
+  color: #aaa79e;
+  font-size: 13px;
+  line-height: 2;
+  white-space: pre-line;
+}
+
+.about-image,
+.contact-image {
+  margin: 0;
+  position: relative;
+}
+
+.about-image img,
+.contact-image img {
+  display: block;
+  width: 100%;
+  height: clamp(360px, 43vw, 590px);
+  object-fit: cover;
+  filter: saturate(.78);
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 14px -14px -14px 14px;
+  border: 1px solid rgba(198, 174, 140, .42);
+  pointer-events: none;
+}
+
+.about-image figcaption,
+.contact-image figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 17px;
+  color: #8c8981;
+  font-size: 8px;
+  letter-spacing: .16em;
+}
+
+.about-endnote {
+  border-top: 1px solid #37362f;
+  margin-top: 90px;
+  padding-top: 17px;
+  color: #77756e;
+}
+
+@media (max-width: 900px) {
+  .about-hero {
+    padding: 130px 8vw 60px;
+  }
+
+  .about-grid {
+    margin-top: 54px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero {
+    padding: 112px 8vw 54px;
+  }
+
+  .about-kicker,
+  .about-endnote {
+    font-size: 7px;
+  }
+
+  .about-kicker span:last-child {
+    max-width: 135px;
+    text-align: right;
+    line-height: 1.7;
+  }
+
+  .about-grid {
+    margin-top: 48px;
+  }
+
+  .about-copy h1 {
+    font-size: clamp(46px, 12vw, 64px);
+  }
+
+  .about-copy p {
+    font-size: 12px;
+  }
+
+  .about-image img {
+    height: 360px;
+  }
+
+  .about-image::before {
+    inset: 10px -9px -10px 9px;
+  }
+
+  .about-image figcaption {
+    font-size: 7px;
+  }
+
+  .about-endnote {
+    margin-top: 65px;
+  }
+}
