@@ -1,0 +1,16 @@
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 54%;
+  transform: scale(1.025);
+  animation: hero-drift 24s ease-in-out infinite alternate;
+}
+
+@media (max-width: 640px) {
+  .hero-video {
+    object-position: 57% center;
+  }
+}
