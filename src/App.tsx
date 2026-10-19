@@ -7,8 +7,8 @@ import Loading from "./components/ui/Loading";
 import "aos/dist/aos.css";
 
 const Home = lazy(() => import("./pages/home/Home"));
-const About = lazy(() => import("./pages/about/About"));
-const Contact = lazy(() => import("./pages/contact/Contact"));
+const About = lazy(() => import("./pages/about/about"));
+const Contact = lazy(() => import("./pages/contact/contact"));
 const ProjectDetail = lazy(() => import("./pages/project/ProjectDetail"));
 
 function App() {
