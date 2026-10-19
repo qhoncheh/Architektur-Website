@@ -2,6 +2,51 @@
 
 @import 'aos/dist/aos.css';
 
+.language-select-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.language-select-wrap::after {
+  position: absolute;
+  right: 14px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid rgba(255, 255, 255, 0.8);
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  pointer-events: none;
+}
+
+.language-select {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  padding: 10px 34px 10px 14px;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(18, 18, 16, 0.55);
+  font: inherit;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.language-select option {
+  color: #171713;
+  background: #f3eee4;
+}
+
+html[dir="rtl"] .language-select {
+  padding: 10px 14px 10px 34px;
+}
+
+html[dir="rtl"] .language-select-wrap::after {
+  right: auto;
+  left: 14px;
+}
+
 @theme {
   --color-bg: #070707;
   --color-surface: #0f0f0f;

@@ -16,7 +16,7 @@ const ProjectDetail = () => {
         <Link to="/#projects" className="text-link text-white">
   ← {t("menu.projects")}
 </Link>
-        <span>SELECTED PROJECT · {String(slides.indexOf(project) + 1).padStart(2, "0")}</span>
+          <span>{t("project.selected")} · {String(slides.indexOf(project) + 1).padStart(2, "0")}</span>
       </div>
       <div className="project-detail-grid">
         <ProjectInfo project={project} />

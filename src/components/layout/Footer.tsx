@@ -6,9 +6,9 @@ const Footer = () => {
 
   return (
     <footer className="site-footer">
-      <Link className="footer-brand" to="/">GHAZALEH ATAEI<span>Architecture · Interiors · Objects</span></Link>
+      <Link className="footer-brand" to="/">GHAZALEH ATAEI<span>{t("brand.footerTagline")}</span></Link>
       <p>{t("footer")}</p>
-      <a href="mailto:hello@ghazalehataei.com">Start a conversation <span aria-hidden="true">↗</span></a>
+      <a href="mailto:hello@ghazalehataei.com">{t("footerContact")} <span aria-hidden="true">↗</span></a>
     </footer>
   );
 };

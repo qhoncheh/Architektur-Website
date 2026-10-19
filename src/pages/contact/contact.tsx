@@ -2,14 +2,14 @@ import { useEffect } from "react";
 import { Row, Col } from "antd";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { contactData } from "../../components/contact/data";
 import ContactItem from "../../components/contact/Contact";
 import "./Contact.css";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const photoUrl = "/113.png";
-  // const { t } = useTranslation();
 
   useEffect(() => {
     AOS.init({
@@ -23,15 +23,15 @@ const Contact = () => {
     <main className="contact-page">
       <section className="contact-section">
         <div className="contact-kicker" data-aos="fade-up">
-          <span>04 / GET IN TOUCH</span>
-          <span>HAVE A PROJECT IN MIND?</span>
+          <span>{t("contact.kicker")}</span>
+          <span>{t("contact.prompt")}</span>
         </div>
         <Row gutter={[64, 48]} align="middle" className="contact-grid">
           <Col xs={24} lg={12}>
             <div className="contact-copy" data-aos="fade-up">
-              <span className="contact-eyebrow">LET’S MAKE SPACE FOR IT</span>
-              {/* <h1>{t("ContactMe")}</h1> */}
-              <p>For new projects, collaborations, or simply to say hello, get in touch.</p>
+              <span className="contact-eyebrow">{t("contact.eyebrow")}</span>
+              <h1 className="sr-only">{t("ContactMe")}</h1>
+              <p>{t("contact.text")}</p>
               <div className="contact-list">
                 {contactData.map((item) => (
                   <ContactItem key={item.type} {...item} />
@@ -41,8 +41,8 @@ const Contact = () => {
           </Col>
           <Col xs={24} lg={12}>
             <figure className="contact-image" data-aos="fade-up" data-aos-delay="150">
-              <img src={photoUrl} alt="Architecture and interior design by Ghazaleh Ataei" />
-              <figcaption><span>MAZANDARAN · IRAN</span><span>AVAILABLE FOR SELECT PROJECTS</span></figcaption>
+              <img src={photoUrl} alt={t("contact.imageAlt")} />
+              <figcaption><span>{t("contact.location")}</span><span>{t("contact.availability")}</span></figcaption>
             </figure>
           </Col>
         </Row>

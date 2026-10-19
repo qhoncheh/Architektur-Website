@@ -1,5 +1,6 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Route, Routes } from "react-router";
+import { useTranslation } from "react-i18next";
 import "./App.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -12,6 +13,15 @@ const Contact = lazy(() => import("./pages/contact/contact"));
 const ProjectDetail = lazy(() => import("./pages/project/ProjectDetail"));
 
 function App() {
+  const { i18n, t } = useTranslation();
+
+  useEffect(() => {
+    const language = i18n.resolvedLanguage ?? i18n.language;
+    document.documentElement.dir = language === "fa" ? "rtl" : "ltr";
+    document.documentElement.lang = language;
+    document.title = t("siteTitle");
+  }, [i18n.language, i18n.resolvedLanguage, t]);
+
   return (
     <div className="min-h-screen flex flex-col bg-[#070707] text-[#e7e7e7]">
       <Header />

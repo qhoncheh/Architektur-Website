@@ -5,9 +5,9 @@ const AboutText = () => {
 
   return (
     <div className="about-copy" data-aos="fade-up">
-      <span className="about-eyebrow">SPACES WITH A SENSE OF PLACE</span>
-      {/* <h1>{t("AboutMe")}</h1> */}
-      <p>{t("AboutMeText")}</p>
+      <span className="about-eyebrow">{t("about.eyebrow")}</span>
+      <h1 className="sr-only">{t("AboutMe")}</h1>
+      <p>{t("about.text")}</p>
     </div>
   );
 };

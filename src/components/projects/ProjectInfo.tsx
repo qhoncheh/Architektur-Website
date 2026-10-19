@@ -12,10 +12,10 @@ const { Title, Text, Paragraph } = Typography;
 
 type Project = {
   id: string;
+  translationKey: string;
   titleKey: string;
   subtitleKey: string;
   textKey: string;
-  location: string;
   landArea: string;
   builtArea: string;
   images: string[];
@@ -38,28 +38,28 @@ const ProjectInfo = ({ project }: Props) => {
     {
       key: "location",
       icon: <EnvironmentOutlined />,
-      label: t("Location"),
-      value: project.location,
+      label: t("project.location"),
+      value: t(`project.${project.translationKey}.location`),
     },
     {
       key: "landArea",
       icon: <HomeOutlined />,
-      label: t("LandArea"),
-      value: project.landArea,
+      label: t("project.LandArea"),
+      value: `${project.landArea} ${t("project.sqm")}`,
     },
     {
       key: "builtArea",
       icon: <HomeOutlined />,
-      label: t("BuiltArea"),
-      value: project.builtArea,
+      label: t("project.BuiltArea"),
+      value: `${project.builtArea} ${t("project.sqm")}`,
     },
     {
       key: "year",
       icon: <FieldTimeOutlined />,
-      label: t("Year"),
+      label: t("project.Year"),
       value: (
         <>
-          {t("DesignBy")} {project.year.design} - {t("Completion")}{" "}
+            {t("project.DesignBy")} {project.year.design} - {t("project.Completion")}{" "}
           {project.year.completion}
         </>
       ),
@@ -67,7 +67,7 @@ const ProjectInfo = ({ project }: Props) => {
     {
       key: "architect",
       icon: <TeamOutlined />,
-      label: t("Architect"),
+      label: t("project.Architect"),
       value: project.designTeam.architect,
     },
   ];

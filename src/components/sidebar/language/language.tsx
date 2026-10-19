@@ -1,38 +1,23 @@
-import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import i18n from "../../../i18n";
 
 const LanguageToggle = () => {
-  const [lang, setLang] = useState(i18n.language || "en");
-  const toggleLanguage = () => {
-    const newLang = lang === "en" ? "de" : "en";
-    setLang(newLang);
-    i18n.changeLanguage(newLang);
-  };
+  const { t, i18n: currentI18n } = useTranslation();
 
   return (
-    <div
-      onClick={toggleLanguage}
-      style={{
-        position:"absolute",
-        bottom: "230px",
-        left: "2px",
-        cursor: "pointer",
-        width: "48px",
-        height: "48px",
-        border: "1px solid #232d42",
-        borderRadius: "12px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        color: "#fff",
-        backgroundColor: "#232d42",
-        fontSize: "12px",
-        fontWeight: 500,
-        userSelect: "none",
-      }}
-    >
-      {lang.toUpperCase()}
-    </div>
+    <label style={{ display: "block", color: "#fff" }}>
+      <span className="sr-only">{t("language.label")}</span>
+      <select
+        aria-label={t("language.label")}
+        value={currentI18n.resolvedLanguage ?? currentI18n.language}
+        onChange={(event) => void i18n.changeLanguage(event.target.value)}
+        style={{ width: "100%", padding: "12px", border: "1px solid #232d42", borderRadius: "12px", color: "#fff", background: "#232d42" }}
+      >
+        <option value="fa">{t("language.fa")}</option>
+        <option value="en">{t("language.en")}</option>
+        <option value="de">{t("language.de")}</option>
+      </select>
+    </label>
   );
 };
 
